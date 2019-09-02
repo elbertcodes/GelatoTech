@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.is-danger{
+    background: #d32323!important;
+}
+#hero{
+    background: url('https://i.postimg.cc/QtSxzC1G/imageonline-co-darkenimage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem 8rem;
+
+}
+#hero h1{
+    color:white;
+}
+#hero h2{
+    color:white;
+}
+
+.work-section{
+    background: #616161;
+    color:white;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+.work-section a{
+    color:white;
+}
+.icon-item{
+    font-size: 2rem;
+}
+.icon-item:hover{
+    color:#b3b1b1;
+    transition: .5s ease;
+}
+#companies{
+    font-size: 3rem;
+}
+
+/* about */
+.about-container{
+   background-color: #636363;
+   padding: 4rem;
+   margin: 5rem auto; 
+   border-radius: 8px;
+
+}
+.about-container img{
+    border-radius: 5px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-container p{
+    color: white;
+}
+
+/* technicians */
+#technician{
+    padding: 3rem;
+}
+/* get started */
+#get-started{
+    background-image: url('https://i.postimg.cc/6q21R44N/image.png');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    padding:5rem;
+
+}
+#get-started h1{
+    color:white;
+}
+#why-us ul li{
+    padding: 0.5rem;
+}
+/* media queries */
+/* [iphone6](phones, 600px and down) */
+@media only screen and (max-width: 700px) {
+    #hero h1{
+        font-size: 1.5rem!important;
+    }
+    #hero h2{
+        font-size: 1rem!important;
+    }
+    #technician h1{
+        font-size: 2rem!important;
+    }
+    #technician p{
+        font-size: 0.8rem!important;
+    }
+    #get-started .title{
+        font-size: 2rem;
+    }
+    #get-started .subtitle{
+        font-size: 1rem;
+    }
+    .subtitle{
+        font-size: 1.5rem!important;
+    }
+    #get-started .title{
+        font-size: 2rem;
+    }
+    #get-started .subtitle{
+        font-size: 1rem;
+    }
+    #repair h1{
+        font-size: 1.8rem;
+    }
+    #repair .subtitle{
+        font-size:1rem;
+    }
+    #hero{
+        padding: 4rem 0;
+    }
+    #hero .title{
+        font-size: 2rem;
+    }
+    #hero .subtitle{
+        font-size: 1.5rem;
+    }
+    #works h1{
+        font-size: 2rem;
+    }
+    .why-container{
+        text-align: center;
+
+    }
+    #why-us ul{
+        list-style-type: none;
+    }
+    #why-us h2{
+        font-size: 1.2rem;
+    }#why-us h3{
+        font-size: 1rem;
+    }
+} 
+.navbar{
+    padding: 10px!important;
+}
+#nav-menu{
+   margin-left:21vw;
+   cursor: pointer
+}
+
+#nav-items a{
+    margin:0.5rem;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+ 
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+
+

@@ -1,0 +1,171 @@
+:root{
+    --action-color:#21bd21;
+}
+*{
+    padding: 0;
+    margin:0;
+}
+
+
+.btn{
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: .5s ease;
+    border:none;
+}
+
+.btn-action{
+    background: var(--action-color);
+    color:white;
+}
+.btn-action:hover{
+    background: #1aa01a;
+    color:white;
+}
+#hero{
+    background:url('https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    
+    padding:5rem 0;
+}
+#hero h1{
+    color:white;
+}
+#hero h2{
+    color:white;
+}
+#pricing{
+
+}
+#services{
+    background:rgb(244, 244, 244);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 5px;
+}
+#get-started{
+    background-image: url('https://thuthuatios.com/wp-content/uploads/2018/09/iphone-xs-camera-truedepth.jpg');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    padding:5rem;
+
+}
+#get-started h1{
+    color:white;
+}
+#why-us ul li{
+    padding: 0.5rem;
+}
+#why-us ul{
+    list-style-type: circle;
+}
+#total-price-text{
+    color:#e81010;
+    display: inline-block;
+    margin: 0;
+}
+.why-container{
+    background:rgb(244, 244, 244);
+    padding: 3rem;
+    border-radius:5px;
+    
+}
+.center{
+    margin-left:auto;
+    margin-right:auto;
+}
+.form-container{
+    background:rgb(228, 228, 228);
+    padding: 3rem;
+    border-radius: 5px;
+}
+.work-section{
+    background: #616161;
+    color:white;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+.work-section a{
+    color:white;
+}
+.icon-item{
+    font-size: 2rem;
+}
+.icon-item:hover{
+    color:#b3b1b1;
+    transition: .5s ease;
+}
+#companies{
+    font-size: 3rem;
+}
+#nav{
+    /* background:none!important; */
+}
+/* media queries */
+/* [iphone6](phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #get-started .title{
+        font-size: 2rem;
+    }
+    #get-started .subtitle{
+        font-size: 1rem;
+    }
+    #repair h1{
+        font-size: 1.8rem;
+    }
+    #repair .subtitle{
+        font-size:1rem;
+    }
+    #hero{
+        padding: 4rem 0;
+    }
+    #hero .title{
+        font-size: 2rem;
+    }
+    #hero .subtitle{
+        font-size: 1.5rem;
+    }
+    #works h1{
+        font-size: 2rem;
+    }
+    .why-container{
+        text-align: center;
+
+    }
+    #why-us ul{
+        list-style-type: none;
+    }
+    #why-us h2{
+        font-size: 1.2rem;
+    }#why-us h3{
+        font-size: 1rem;
+    }
+} 
+.navbar{
+    padding: 10px!important;
+}
+#nav-menu{
+   margin-left:21vw;
+   cursor: pointer
+}
+
+#nav-items a{
+    margin:0.5rem;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+ 
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+

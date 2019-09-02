@@ -1,0 +1,15 @@
+.blog-container{
+    padding: 4rem 8rem;
+}
+#blog p{
+    font-size: 1.3rem;
+    
+}
+#blog{
+    margin-top:3rem;
+}
+@media only screen and (max-width: 600px) {
+    .blog-container{
+        padding: 1rem 1rem;
+    }
+}
