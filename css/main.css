@@ -23,8 +23,10 @@
   color: white;
 }
 #hero {
-  background: url("https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-
+  background: url("https://i.postimg.cc/NMhR4Dp0/whats-icracked.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
   padding: 5rem 0;
 }
 #hero h1 {
