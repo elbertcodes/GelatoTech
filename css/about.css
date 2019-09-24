@@ -67,8 +67,9 @@
   background-repeat: no-repeat;
   padding: 5rem;
 }
-#get-started h1 {
+#get-started h3 {
   color: white;
+  
 }
 #why-us ul li {
   padding: 0.5rem;
