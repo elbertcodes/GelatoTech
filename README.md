@@ -1,1 +1,1 @@
-# gelatotech.com/iphone-repair
+# gelatotech.com
