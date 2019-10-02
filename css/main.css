@@ -7,9 +7,9 @@
 }
 
 .btn {
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   transition: 0.5s ease;
   border: none;
 }
@@ -59,22 +59,25 @@
   color: white;
 }
 .btn-action:hover {
-  background: #DB4437;
+  background: #0a7c0a;
   color: white;
 }
 #hero {
   background: url("https://i.postimg.cc/NMhR4Dp0/whats-icracked.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: 100%;
   padding: 5rem 0;
 }
 #hero h1 {
-  color: white;
+  margin: 2vh;
+  padding: 3vh;
+  color: rgb(255, 255, 255);
 }
 #hero h2 {
   color: white;
 }
+
 #services {
   background: rgb(244, 244, 244);
   padding: 1.5rem;
@@ -178,7 +181,6 @@
   #why-us h3 {
     font-size: 1rem;
   }
-}
 .navbar {
   padding: 10px !important;
 }
