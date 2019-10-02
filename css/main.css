@@ -75,7 +75,7 @@
   color: rgb(255, 255, 255);
 }
 #hero h2 {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 #services {
@@ -181,8 +181,9 @@
   #why-us h3 {
     font-size: 1rem;
   }
+
 .navbar {
-  padding: 10px !important;
+  padding: 8px !important;
 }
 #nav-menu {
   margin-left: 21vw;
