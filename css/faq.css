@@ -45,7 +45,7 @@
   }
 
   .navbar {
-    padding: 10px !important;
+    padding: 8px !important;
   }
   #nav-menu {
     margin-left: 21vw;
@@ -55,7 +55,7 @@
   #nav-items a {
     margin: 0.5rem;
   }
-  
+
   /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 }
