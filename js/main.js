@@ -58,18 +58,20 @@ function myFunction() {
     $("#select-device").show();
     console.log("h");
   }
-  if (chooseDevice === "iPad") {
+  if (chooseDevice === "ipad") {
+    $("#select-device").show();
+    console.log("h");
   }
 
   if (chooseIssue == "screen" && chooseDeviceModel == "8plus") {
-    $("#total-price-text").text("$149");
+    $("#total-price-text").text("120");
   }
   if (chooseIssue == "battery" && chooseDeviceModel == "8plus") {
     $("#total-price-text").text("80");
     $("#warranty-text").text("90 Day Warranty");
   }
   if (chooseIssue == "screen" && chooseDeviceModel == "8") {
-    $("#total-price-text").text("139");
+    $("#total-price-text").text("110");
   }
   if (chooseIssue == "battery" && chooseDeviceModel == "8") {
     $("#total-price-text").text("70");
@@ -83,21 +85,21 @@ function myFunction() {
     $("#warranty-text").text("90 Day Warranty");
   }
   if (chooseIssue == "screen" && chooseDeviceModel == "7") {
-    $("#total-price-text").text("109");
+    $("#total-price-text").text("90");
   }
   if (chooseIssue == "battery" && chooseDeviceModel == "7") {
     $("#total-price-text").text("70");
     $("#warranty-text").text("90 Day Warranty");
   }
   if (chooseIssue == "screen" && chooseDeviceModel == "6splus") {
-    $("#total-price-text").text("99");
+    $("#total-price-text").text("90");
   }
   if (chooseIssue == "battery" && chooseDeviceModel == "6splus") {
     $("#total-price-text").text("65");
     $("#warranty-text").text("90 Day Warranty");
   }
   if (chooseIssue == "screen" && chooseDeviceModel == "6s") {
-    $("#total-price-text").text("$99");
+    $("#total-price-text").text("80");
   }
   if (chooseIssue == "battery" && chooseDeviceModel == "6s") {
     $("#total-price-text").text("60");
@@ -110,28 +112,28 @@ function myFunction() {
     $("#total-price-text").text("65");
   }
   if (chooseIssue == "screen" && chooseDeviceModel == "6plus") {
-    $("#total-price-text").text("90");
+    $("#total-price-text").text("80");
   }
   if (chooseIssue == "battery" && chooseDeviceModel == "6plus") {
     $("#total-price-text").text("60");
     $("#warranty-text").text("90 Day Warranty");
   }
   if (chooseIssue == "screen" && chooseDeviceModel == "6") {
-    $("#total-price-text").text("80");
+    $("#total-price-text").text("75");
   }
   if (chooseIssue == "battery" && chooseDeviceModel == "6") {
     $("#total-price-text").text("50");
     $("#warranty-text").text("90 Day Warranty");
   }
   if (chooseIssue == "screen" && chooseDeviceModel == "5s") {
-    $("#total-price-text").text("70");
+    $("#total-price-text").text("65");
   }
   if (chooseIssue == "battery" && chooseDeviceModel == "5s") {
     $("#total-price-text").text("50");
     $("#warranty-text").text("90 Day Warranty");
   }
   if (chooseIssue == "screen" && chooseDeviceModel == "5") {
-    $("#total-price-text").text("70");
+    $("#total-price-text").text("65");
   }
   if (chooseIssue == "battery" && chooseDeviceModel == "5") {
     $("#total-price-text").text("45");
@@ -142,10 +144,10 @@ function myFunction() {
     $("#warranty-text").text("90 Day Warranty");
   }
   if (chooseIssue == "screen" && chooseDeviceModel == "x") {
-    $("#total-price-text").text("259");
+    $("#total-price-text").text("200");
   }
   if (chooseIssue == "screen" && chooseDeviceModel == "xs") {
-    $("#total-price-text").text("280");
+    $("#total-price-text").text("250");
   }
   if (chooseIssue == "screen" && chooseDeviceModel == "xsmax") {
     $("#total-price-text").text("330");
@@ -175,27 +177,39 @@ function myFunction() {
   });
 
   //ipad if statements
-  // if (selectIpadIssue == "screen" && selectIpadDevice =="mini4"){
-  // $("#total-price-text-ipad").text("249");
-  // } if (selectIpadIssue == "screen" && selectIpadDevice =="mini3"){
-  // $("#total-price-text-ipad").text("209");
-  // } if (selectIpadIssue == "screen" && selectIpadDevice =="mini2"){
-  // $("#total-price-text-ipad").text("159");
-  // } if (selectIpadIssue == "screen" && selectIpadDevice =="mini1"){
-  // $("#total-price-text-ipad").text("159");
-  // } if (selectIpadIssue == "screen" && selectIpadDevice =="ipad5"){
-  // $("#total-price-text-ipad").text("209");
-  // } if (selectIpadIssue == "screen" && selectIpadDevice =="air1"){
-  // $("#total-price-text-ipad").text("159");
-  // } if (selectIpadIssue == "screen" && selectIpadDevice =="air2"){
-  // $("#total-price-text-ipad").text("329");
-  // } if (selectIpadIssue == "screen" && selectIpadDevice =="pro"){
-  // $("#total-price-text-ipad").text("249");
-  // } if (selectIpadIssue == "screen" && selectIpadDevice =="ipad4"){
-  // $("#total-price-text-ipad").text("89");
-  // } if (selectIpadIssue == "screen" && selectIpadDevice =="ipad3"){                                                                                         $("#total-price-text-ipad").text("89");
-  // } if (selectIpadIssue == "screen" && selectIpadDevice =="ipad2"){
-  //   $("#total-price-text-ipad").text("89")                                                                                             }
+  if (selectIpadIssue == "screen" && selectIpadDevice == "mini4") {
+    $("#total-price-text-ipad").text("249");
+  }
+  if (selectIpadIssue == "screen" && selectIpadDevice == "mini3") {
+    $("#total-price-text-ipad").text("209");
+  }
+  if (selectIpadIssue == "screen" && selectIpadDevice == "mini2") {
+    $("#total-price-text-ipad").text("159");
+  }
+  if (selectIpadIssue == "screen" && selectIpadDevice == "mini1") {
+    $("#total-price-text-ipad").text("159");
+  }
+  if (selectIpadIssue == "screen" && selectIpadDevice == "ipad5") {
+    $("#total-price-text-ipad").text("209");
+  }
+  if (selectIpadIssue == "screen" && selectIpadDevice == "air1") {
+    $("#total-price-text-ipad").text("159");
+  }
+  if (selectIpadIssue == "screen" && selectIpadDevice == "air2") {
+    $("#total-price-text-ipad").text("329");
+  }
+  if (selectIpadIssue == "screen" && selectIpadDevice == "pro") {
+    $("#total-price-text-ipad").text("249");
+  }
+  if (selectIpadIssue == "screen" && selectIpadDevice == "ipad4") {
+    $("#total-price-text-ipad").text("89");
+  }
+  if (selectIpadIssue == "screen" && selectIpadDevice == "ipad3") {
+    $("#total-price-text-ipad").text("89");
+  }
+  if (selectIpadIssue == "screen" && selectIpadDevice == "ipad2") {
+    $("#total-price-text-ipad").text("89");
+  }
 }
 
 $(function() {
