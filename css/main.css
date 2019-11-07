@@ -213,3 +213,7 @@
 .snapAppointments-link {
   font-size: 2rem;
 }
+.is-dangers {
+  background: #d32323 !important;
+  color: white;
+}
