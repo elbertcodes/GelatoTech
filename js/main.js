@@ -20,6 +20,7 @@ jQuery(document).ready(function($) {
     );
     return false;
   });
+  
 
   ("use strict");
   //  TESTIMONIALS CAROUSEL HOOK
