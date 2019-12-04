@@ -67,182 +67,304 @@ function myFunction() {
   if (chooseIssue == "screen" && chooseDeviceModel == "8plus") {
     $("#total-price-text").text("$120");
     $("#warranty-text").text("Lifetime Warranty Included");
+    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
   }
   if (chooseIssue == "battery" && chooseDeviceModel == "8plus") {
     $("#total-price-text").text("$80");
     $("#warranty-text").text("90 Day Warranty Included");
+    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
   }
   if (chooseIssue == "charging" && chooseDeviceModel == "8plus") {
     $("#total-price-text").text("$80");
     $("#warranty-text").text("90 Day Warranty Included");
+    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
+  }
+  if (chooseIssue == "water" && chooseDeviceModel == "8plus") {
+    $("#total-price-text").text("$160 - $200");
+    $("#warranty-text").text("No Warranty Included");
+    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
   }
   if (chooseIssue == "screen" && chooseDeviceModel == "8") {
     $("#total-price-text").text("$110");
     $("#warranty-text").text("Lifetime Warranty Included");
+    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
   }
   if (chooseIssue == "battery" && chooseDeviceModel == "8") {
     $("#total-price-text").text("$70");
     $("#warranty-text").text("90 Day Warranty Included");
+    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
   }
   if (chooseIssue == "charging" && chooseDeviceModel == "8") {
     $("#total-price-text").text("$70");
     $("#warranty-text").text("90 Day Warranty Included");
+    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
+  }
+  if (chooseIssue == "water" && chooseDeviceModel == "8") {
+    $("#total-price-text").text("$160 - $200");
+    $("#warranty-text").text("No Warranty Included");
+    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
   }
   if (chooseIssue == "screen" && chooseDeviceModel == "7plus") {
     $("#total-price-text").text("$109");
     $("#warranty-text").text("Lifetime Warranty Included");
+    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
   }
   if (chooseIssue == "battery" && chooseDeviceModel == "7plus") {
     $("#total-price-text").text("$70");
     $("#warranty-text").text("90 Day Warranty Included");
+    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
   }
   if (chooseIssue == "charging" && chooseDeviceModel == "7plus") {
     $("#total-price-text").text("$70");
     $("#warranty-text").text("90 Day Warranty Included");
+    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
+  }
+  if (chooseIssue == "water" && chooseDeviceModel == "7plus") {
+    $("#total-price-text").text("$140 - $180");
+    $("#warranty-text").text("No Warranty Included");
+    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
   }
   if (chooseIssue == "screen" && chooseDeviceModel == "7") {
     $("#total-price-text").text("$90");
     $("#warranty-text").text("Lifetime Warranty Included");
+    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
   }
   if (chooseIssue == "battery" && chooseDeviceModel == "7") {
     $("#total-price-text").text("$70");
     $("#warranty-text").text("90 Day Warranty Included");
+    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
   }
   if (chooseIssue == "charging" && chooseDeviceModel == "7") {
     $("#total-price-text").text("$70");
     $("#warranty-text").text("90 Day Warranty Included");
+    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
+  }
+  if (chooseIssue == "water" && chooseDeviceModel == "7") {
+    $("#total-price-text").text("$140 - $180");
+    $("#warranty-text").text("No Warranty Included");
+    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
   }
   if (chooseIssue == "screen" && chooseDeviceModel == "6splus") {
     $("#total-price-text").text("$90");
     $("#warranty-text").text("Lifetime Warranty Included");
+    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
   }
   if (chooseIssue == "battery" && chooseDeviceModel == "6splus") {
     $("#total-price-text").text("$65");
     $("#warranty-text").text("90 Day Warranty Included");
+    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
   }
   if (chooseIssue == "charging" && chooseDeviceModel == "6splus") {
     $("#total-price-text").text("$65");
     $("#warranty-text").text("90 Day Warranty Included");
+    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
+  }
+  if (chooseIssue == "water" && chooseDeviceModel == "6splus") {
+    $("#total-price-text").text("$120 - $160");
+    $("#warranty-text").text("No Warranty Included");
+    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
   }
   if (chooseIssue == "screen" && chooseDeviceModel == "6s") {
     $("#total-price-text").text("$80");
     $("#warranty-text").text("Lifetime Warranty Included");
+    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
   }
   if (chooseIssue == "battery" && chooseDeviceModel == "6s") {
     $("#total-price-text").text("$60");
     $("#warranty-text").text("90 Day Warranty Included");
+    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
   }
   if (chooseIssue == "charging" && chooseDeviceModel == "6s") {
     $("#total-price-text").text("$60");
     $("#warranty-text").text("90 Day Warranty Included");
+    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
+  }
+  if (chooseIssue == "water" && chooseDeviceModel == "6s") {
+    $("#total-price-text").text("$120 - $160");
+    $("#warranty-text").text("No Warranty Included");
+    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
   }
   if (chooseIssue == "screen" && chooseDeviceModel == "SE") {
     $("#total-price-text").text("$70");
     $("#warranty-text").text("Lifetime Warranty Included");
+    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
   }
   if (chooseIssue == "battery" && chooseDeviceModel == "SE") {
     $("#total-price-text").text("$65");
     $("#warranty-text").text("90 Day Warranty Included");
+    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
   }
   if (chooseIssue == "charging" && chooseDeviceModel == "SE") {
     $("#total-price-text").text("$45");
     $("#warranty-text").text("90 Day Warranty Included");
+    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
+  }
+  if (chooseIssue == "water" && chooseDeviceModel == "SE") {
+    $("#total-price-text").text("$120 - $160");
+    $("#warranty-text").text("No Warranty Included");
+    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
   }
   if (chooseIssue == "screen" && chooseDeviceModel == "6plus") {
     $("#total-price-text").text("$80");
     $("#warranty-text").text("Lifetime Warranty Included");
+    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
   }
   if (chooseIssue == "battery" && chooseDeviceModel == "6plus") {
     $("#total-price-text").text("$60");
     $("#warranty-text").text("90 Day Warranty Included");
+    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
   }
   if (chooseIssue == "charging" && chooseDeviceModel == "6plus") {
     $("#total-price-text").text("$60");
     $("#warranty-text").text("90 Day Warranty Included");
+    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
+  }
+  if (chooseIssue == "water" && chooseDeviceModel == "6plus") {
+    $("#total-price-text").text("$120 - $160");
+    $("#warranty-text").text("No Warranty Included");
+    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
   }
   if (chooseIssue == "screen" && chooseDeviceModel == "6") {
     $("#total-price-text").text("$75");
-    $("#warranty-text").text("Lifetime Warranty Included");
+    $("#warranty-text").text("Lifetime Warranty Included.");
+    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
   }
   if (chooseIssue == "battery" && chooseDeviceModel == "6") {
     $("#total-price-text").text("$50");
-    $("#warranty-text").text("90 Day Warranty Included");
+    $("#warranty-text").text("90 Day Warranty Included.");
+    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
   }
   if (chooseIssue == "charging" && chooseDeviceModel == "6") {
     $("#total-price-text").text("$50");
-    $("#warranty-text").text("90 Day Warranty Included");
+    $("#warranty-text").text("90 Day Warranty Included.");
+    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
+  }
+  if (chooseIssue == "water" && chooseDeviceModel == "6") {
+    $("#total-price-text").text("$120 - $160");
+    $("#warranty-text").text("No Warranty Included.");
+    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
   }
   if (chooseIssue == "screen" && chooseDeviceModel == "5s") {
     $("#total-price-text").text("$65");
-    $("#warranty-text").text("Lifetime Warranty Included");
+    $("#warranty-text").text("Lifetime Warranty Included.");
+    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
   }
   if (chooseIssue == "battery" && chooseDeviceModel == "5s") {
     $("#total-price-text").text("$50");
-    $("#warranty-text").text("90 Day Warranty Included");
+    $("#warranty-text").text("90 Day Warranty Included.");
+    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
   }
   if (chooseIssue == "charging" && chooseDeviceModel == "5s") {
     $("#total-price-text").text("$50");
-    $("#warranty-text").text("90 Day Warranty Included");
+    $("#warranty-text").text("90 Day Warranty Included.");
+    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
+
+  }
+  if (chooseIssue == "water" && chooseDeviceModel == "5s") {
+    $("#total-price-text").text("$100 - $140");
+    $("#warranty-text").text("No Warranty Included");
+    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
   }
   if (chooseIssue == "screen" && chooseDeviceModel == "5") {
     $("#total-price-text").text("$65");
-    $("#warranty-text").text("Lifetime Warranty Included");
+    $("#warranty-text").text("Lifetime Warranty Included.");
+    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
   }
   if (chooseIssue == "battery" && chooseDeviceModel == "5") {
     $("#total-price-text").text("$45");
-    $("#warranty-text").text("90 Day Warranty Included");
+    $("#warranty-text").text("90 Day Warranty Included.");
+    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
   }
   if (chooseIssue == "charging" && chooseDeviceModel == "5") {
     $("#total-price-text").text("$45");
-    $("#warranty-text").text("90 Day Warranty Included");
+    $("#warranty-text").text("90 Day Warranty Included.");
+    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
+  }
+  if (chooseIssue == "water" && chooseDeviceModel == "5") {
+    $("#total-price-text").text("$100 - $140");
+    $("#warranty-text").text("No Warranty Included.");
+    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
   }
   if (chooseIssue == "battery" && chooseDeviceModel == "x") {
     $("#total-price-text").text("$89");
     $("#warranty-text").text("90 Day Warranty Included");
+    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
   }
   if (chooseIssue == "charging" && chooseDeviceModel == "x") {
     $("#total-price-text").text("$89");
     $("#warranty-text").text("90 Day Warranty Included");
+    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
+  }
+  if (chooseIssue == "water" && chooseDeviceModel == "x") {
+    $("#total-price-text").text("$200 - $250");
+    $("#warranty-text").text("No Warranty Included");
+    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
   }
   if (chooseIssue == "screen" && chooseDeviceModel == "x") {
     $("#total-price-text").text("$200");
     $("#warranty-text").text("Lifetime Warranty Included");
+    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
   }
   if (chooseIssue == "screen" && chooseDeviceModel == "xs") {
     $("#total-price-text").text("$250");
     $("#warranty-text").text("Lifetime Warranty Included");
+    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
   }
   if (chooseIssue == "screen" && chooseDeviceModel == "xsmax") {
     $("#total-price-text").text("$330");
     $("#warranty-text").text("Lifetime Warranty Included");
+    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
   }
   if (chooseIssue == "screen" && chooseDeviceModel == "xr") {
     $("#total-price-text").text("$200");
     $("#warranty-text").text("Lifetime Warranty Included");
+    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
   }
   if (chooseIssue == "battery" && chooseDeviceModel == "xsmax") {
     $("#total-price-text").text("$95");
     $("#warranty-text").text("90 Day Warranty Included");
+    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
   }
   if (chooseIssue == "charging" && chooseDeviceModel == "xsmax") {
     $("#total-price-text").text("$95");
     $("#warranty-text").text("90 Day Warranty Included");
+    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
+    
+  }
+  if (chooseIssue == "water" && chooseDeviceModel == "xsmax") {
+    $("#total-price-text").text("$300 - $350");
+    $("#warranty-text").text("No Warranty Included");
+    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
   }
   if (chooseIssue == "battery" && chooseDeviceModel == "xs") {
     $("#total-price-text").text("$89");
     $("#warranty-text").text("90 Day Warranty Included");
+    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
   }
   if (chooseIssue == "charging" && chooseDeviceModel == "xs") {
     $("#total-price-text").text("$89");
     $("#warranty-text").text("90 Day Warranty Included");
+    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
+  }
+  if (chooseIssue == "water" && chooseDeviceModel == "xs") {
+    $("#total-price-text").text("$250 - $300");
+    $("#warranty-text").text("No Warranty Included");
+    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
   }
   if (chooseIssue == "battery" && chooseDeviceModel == "xr") {
     $("#total-price-text").text("$89");
     $("#warranty-text").text("90 Day Warranty Included");
+    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
   }
   if (chooseIssue == "charging" && chooseDeviceModel == "xr") {
     $("#total-price-text").text("$89");
     $("#warranty-text").text("90 Day Warranty Included");
+    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
+  }
+  if (chooseIssue == "water" && chooseDeviceModel == "xr") {
+    $("#total-price-text").text("$200 - $250");
+    $("#warranty-text").text("No Warranty Included");
+    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
   }
 
   $(document).ready(function() {

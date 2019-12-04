@@ -7,7 +7,6 @@
 }
 
 
-
 .btn {
   padding: 1rem 1rem;
   border-radius: 5px;
@@ -106,15 +105,22 @@
   list-style-type: circle;
 }
 #total-price-text {
-  color: #e81010;
+  color: #32b611;
   display: inline-block;
   margin: 0;
+  font-weight: 700;
 }
 #our-price-text {
-  color: #e81010;
+  color: #000000;
+  font-weight: 700;
 }
 #our-warranty-text {
-  color: #0e5df0;
+  color: #000000;
+  font-size: 1rem;
+}
+#our-repairtime-text {
+  color: #000000;
+  font-size: 1rem;
 }
 .why-container {
   background: rgb(244, 244, 244);
