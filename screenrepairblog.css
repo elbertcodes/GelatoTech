@@ -49,7 +49,15 @@
 .gelatotech{
     margin-top: 5rem;
 }
-
+#get-started {
+    background-image: url("https://i.postimg.cc/J09L22pc/test10.png");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    padding: 5rem;
+  }
 
 
 
@@ -113,6 +121,13 @@
         margin: 5rem 0 0 0;
         padding: 1rem 0;
     }
+    #get-started {
+        background-image: url("https://i.postimg.cc/J09L22pc/test10.png");
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        padding: 5rem;
+      }
 }
 .grid{
     display: grid;
