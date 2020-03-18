@@ -1,0 +1,174 @@
+.apple{
+    margin-top: 3rem;
+}
+.applecare{
+    margin-top: 5rem;
+}
+.iphonescreen{
+    margin-top: 5rem;
+}
+.appleprice {
+    margin: 1rem 1rem 1rem 1rem;
+    font-size: 20px;
+}
+.appleprice li{
+    margin-top: 2rem;
+}
+.price{
+    margin: 1rem 1rem 1rem 1rem;
+    font-size: 20px;
+}
+.price li{
+    margin-top: 2rem;
+}
+.sf{
+    font-size: 10px;
+    margin: 2rem 0 0 0;
+}
+.gelato{
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+p{
+    font-size: 20px;
+}
+.pic{
+  background: url("https://i.postimg.cc/5tF92P1Y/IMG-0044.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10rem ;
+  margin-top: 5rem;
+}
+.ad{
+    margin-top: 5rem;
+}
+.ads{
+    font-size: 20px;
+}
+.gelatotech{
+    margin-top: 5rem;
+}
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .pic{
+        background: url("https://i.postimg.cc/5tF92P1Y/IMG-0044.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 18rem 10rem 0 0;
+        height: 100%;
+        width: 100%;
+        margin-top: 5rem;
+      }
+      .hero{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 200%;
+        width: 200%;
+        margin: 5rem 0 0 0;
+        padding: 1rem 0;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+
+.blog-container{
+    padding: 4rem 8rem;
+}
+
+#blog p{
+    font-size: 1.3rem;
+    
+}
+#blog{
+    margin-top:3rem;
+}
+@media only screen and (max-width: 600px) {
+    .blog-container{
+        padding: 2rem ;
+    }
+    .sf{
+        font-size: 0rem;
+    }
+    .hero{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 200%;
+        width: 200%;
+        margin: 5rem 0 0 0;
+        padding: 1rem 0;
+    }
+}
+.grid{
+    display: grid;
+    margin: 3rem 2rem;
+    justify-items: center;
+    grid-template-columns: auto auto auto auto auto auto;
+  }
+  
+
+  /* social icons */
+  #twitter {
+    color:#1da1f2;
+    font-size: 2rem;
+  }
+  #twitter:hover{color:#87caf3}
+  
+  #yelp {
+    color:red;
+    font-size: 2rem;
+  }
+  #yelp:hover{color:rgba(255, 0, 0, 0.514);}
+  #google {
+    color:#4285F4;
+    font-size: 2rem;
+  }
+  #google:hover{color:rgb(122, 153, 194);}
+  #instagram{
+    color:#3f729b;
+    font-size: 2rem;
+  }
+  #instagram:hover{color:rgb(122, 153, 194);}
+  #linkedin{
+    color:#0e76a8;
+    font-size: 2rem;
+  }
+  
+  #linkedin:hover{color: #798ea0;}
+  #facebook{
+    color:#3b5998;
+    font-size: 2rem;
+  }
+  #facebook:hover{color:#798ea0;}
+  .btn-action {
+    
+    background: var(--action-color);
+    color: white;
+  }
+
+  .navbar {
+    padding: 8px !important;
+  }
+  #nav-menu {
+    margin-left: 21vw;
+    cursor: pointer;
+  }
+  
+  #nav-items a {
+    margin: 0.5rem;
+  }
