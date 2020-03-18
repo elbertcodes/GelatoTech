@@ -37,7 +37,7 @@ p{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 10rem ;
+  padding: 10rem 0 0 0;
   margin-top: 5rem;
 }
 .ad{
@@ -60,7 +60,7 @@ p{
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        padding: 18rem 10rem 0 0;
+        padding: 30rem 0rem 0rem 0;
         height: 100%;
         width: 100%;
         margin-top: 5rem;
