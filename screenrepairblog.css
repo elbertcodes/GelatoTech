@@ -128,6 +128,12 @@
         background-repeat: no-repeat;
         padding: 5rem;
       }
+      #get-started .title {
+        font-size: 2rem;
+      }
+      #get-started .subtitle {
+        font-size: 1rem;
+      }
 }
 .grid{
     display: grid;
