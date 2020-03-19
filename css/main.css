@@ -64,7 +64,7 @@
   color: white;
 }
 #hero {
-  background: url("https://i.postimg.cc/Y9j4MGJT/whats-gelatotech.png");
+  background: url("https://i.postimg.cc/c4TCk23P/whats-icracked.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 100%;
@@ -207,7 +207,7 @@
 #nav-items a {
   margin: 0.5rem;
 }
-/* nav ul li {
+nav ul li {
   position: relative;
 }
 
@@ -233,7 +233,7 @@ nav ul li ul li a {
 }
 nav ul li ul li a:hover {
   background-color: #f3f3f3;
-} */
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
