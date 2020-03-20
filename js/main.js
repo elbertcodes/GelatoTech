@@ -50,367 +50,818 @@ jQuery(document).ready(function($) {
 //pricing js
 
 function myFunction() {
-  var chooseIssue = $("#select-issue").val();
-  var chooseDeviceModel = $("#select-device-model").val();
-  var chooseDevice = $("#select-device").val();
+  var chooseIssue = document.getElementById("select-issue").value;
+  var chooseDeviceModel = document.getElementById("select-device-model").value;
+  var priceTitle = document.getElementById("total-price-text");
+  var warrantyText = document.getElementById("warranty-text");
+  var repairtimeText = document.getElementById("repairtime-text");
+  
 
-  //choose iphone,ipad,pixel, samsung
-  if (chooseDevice === "iphone") {
-    $("#select-device").show();
-    console.log("h");
-  }
-  if (chooseDevice === "ipad") {
-    $("#select-device").show();
-    console.log("h");
+  var deviceDictionary = {
+    iphones: {
+      iphone6:{
+        screen: {
+          price: "Up-front Price $75",
+          warranty: "Lifetime Warranty",
+          duration: "Screen Repair takes 15 minutes",
+        },
+        battery:{
+          price:"Up-front Price $50",
+          warranty: "90 day warranty",
+          duration: "Battery Replacement takes 15 minutes",
+        },
+        charging:{
+          price:"Up-front Price $50",
+          warranty: "90 day warranty",
+          duration: "Charging-Port Replacement takes 30 minutes",
+        },
+        water:{
+          price:"Price-range $160-$200",
+          warranty: "90 day warranty",
+          duration: "Repair takes 2-3 business days",
+        },
+      },
+      iphone6s:{
+        screen: {
+          price: "Up-front Price $85",
+          warranty: "Lifetime Warranty",
+          duration: "Screen Repair takes 15 minutes",
+        },
+        battery:{
+          price:"Up-front Price $50",
+          warranty: "90 day warranty",
+          duration: "Battery Replacement takes 15 minutes",
+        },
+        charging:{
+          price:"Up-front Price $50",
+          warranty: "90 day warranty",
+          duration: "Charging-Port Replacement takes 30 minutes",
+        },
+        water:{
+          price:"Price-range $160-$200",
+          warranty: "90 day warranty",
+          duration: "Repair takes 2-3 business days",
+        },
+      },
+      iphone6plus:{
+        screen: {
+          price: "Up-front Price $85",
+          warranty: "Lifetime Warranty",
+          duration: "Screen Repair takes 15 minutes",
+        },
+        battery:{
+          price:"Up-front Price $50",
+          warranty: "90 day warranty",
+          duration: "Battery Replacement takes 15 minutes",
+        },
+        charging:{
+          price:"Up-front Price $50",
+          warranty: "90 day warranty",
+          duration: "Charging-Port Replacement takes 30 minutes",
+        },
+        water:{
+          price:"Price-range $160-$200",
+          warranty: "90 day warranty",
+          duration: "Repair takes 2-3 business days",
+        },
+      },
+      iphone6splus:{
+        screen: {
+          price: "Up-front Price $90",
+          warranty: "Lifetime Warranty",
+          duration: "Screen Repair takes 15 minutes",
+        },
+        battery:{
+          price:"Up-front Price $55",
+          warranty: "90 day warranty",
+          duration: "Battery Replacement takes 15 minutes",
+        },
+        charging:{
+          price:"Up-front Price $55",
+          warranty: "90 day warranty",
+          duration: "Charging-Port Replacement takes 30 minutes",
+        },
+        water:{
+          price:"Price-range $180-$240",
+          warranty: "90 day warranty",
+          duration: "Repair takes 2-3 business days",
+        },
+      },
+      iphone7:{
+        screen: {
+          price: "Up-front Price $90",
+          warranty: "Lifetime Warranty",
+          duration: "Screen Repair takes 15 minutes",
+        },
+        battery:{
+          price:"Up-front Price $55",
+          warranty: "90 day warranty",
+          duration: "Battery Replacement takes 15 minutes",
+        },
+        charging:{
+          price:"Up-front Price $55",
+          warranty: "90 day warranty",
+          duration: "Charging-Port Replacement takes 30 minutes",
+        },
+        water:{
+          price:"Price-range $180-$240",
+          warranty: "90 day warranty",
+          duration: "Repair takes 2-3 business days",
+        },
+      },
+      iphone7plus:{
+        screen: {
+          price: "Up-front Price $109",
+          warranty: "Lifetime Warranty",
+          duration: "Screen Repair takes 15 minutes",
+        },
+        battery:{
+          price:"Up-front Price $55",
+          warranty: "90 day warranty",
+          duration: "Battery Replacement takes 15 minutes",
+        },
+        charging:{
+          price:"Up-front Price $55",
+          warranty: "90 day warranty",
+          duration: "Charging-Port Replacement takes 30 minutes",
+        },
+        water:{
+          price:"Price-range $200-$250",
+          warranty: "90 day warranty",
+          duration: "Repair takes 2-3 business days",
+        },
+      },
+      iphone8:{
+        screen: {
+          price: "Up-front Price $109",
+          warranty: "Lifetime Warranty",
+          duration: "Screen Repair takes 15 minutes",
+        },
+        battery:{
+          price:"Up-front Price $55",
+          warranty: "90 day warranty",
+          duration: "Battery Replacement takes 15 minutes",
+        },
+        charging:{
+          price:"Up-front Price $55",
+          warranty: "90 day warranty",
+          duration: "Charging-Port Replacement takes 30 minutes",
+        },
+        water:{
+          price:"Price-range $200-$250",
+          warranty: "90 day warranty",
+          duration: "Repair takes 2-3 business days",
+        },
+      },
+      iphone8plus:{
+        screen: {
+          price: "Up-front Price $120",
+          warranty: "Lifetime Warranty",
+          duration: "Screen Repair takes 15 minutes",
+        },
+        battery:{
+          price:"Up-front Price $55",
+          warranty: "90 day warranty",
+          duration: "Battery Replacement takes 15 minutes",
+        },
+        charging:{
+          price:"Up-front Price $55",
+          warranty: "90 day warranty",
+          duration: "Charging-Port Replacement takes 30 minutes",
+        },
+        water:{
+          price:"Price-range $200-$250",
+          warranty: "90 day warranty",
+          duration: "Repair takes 2-3 business days",
+        },
+      },
+      iphonex:{
+        screen: {
+          price: "Up-front Price $200",
+          warranty: "Lifetime Warranty",
+          duration: "Screen Repair takes 15 minutes",
+        },
+        battery:{
+          price:"Up-front Price $65",
+          warranty: "90 day warranty",
+          duration: "Battery Replacement takes 15 minutes",
+        },
+        charging:{
+          price:"Up-front Price $65",
+          warranty: "90 day warranty",
+          duration: "Charging-Port Replacement takes 30 minutes",
+        },
+        water:{
+          price:"Price-range $250-$350",
+          warranty: "90 day warranty",
+          duration: "Repair takes 2-3 business days",
+        },
+      },
+      iphonexs:{
+        screen: {
+          price: "Up-front Price $250",
+          warranty: "Lifetime Warranty",
+          duration: "Screen Repair takes 15 minutes",
+        },
+        battery:{
+          price:"Up-front Price $65",
+          warranty: "90 day warranty",
+          duration: "Battery Replacement takes 15 minutes",
+        },
+        charging:{
+          price:"Up-front Price $65",
+          warranty: "90 day warranty",
+          duration: "Charging-Port Replacement takes 30 minutes",
+        },
+        water:{
+          price:"Price-range $250-$350",
+          warranty: "90 day warranty",
+          duration: "Repair takes 2-3 business days",
+        },
+      },
+      iphonexr:{
+        screen: {
+          price: "Up-front Price $200",
+          warranty: "Lifetime Warranty",
+          duration: "Screen Repair takes 15 minutes",
+        },
+        battery:{
+          price:"Up-front Price $65",
+          warranty: "90 day warranty",
+          duration: "Battery Replacement takes 15 minutes",
+        },
+        charging:{
+          price:"Up-front Price $65",
+          warranty: "90 day warranty",
+          duration: "Charging-Port Replacement takes 30 minutes",
+        },
+        water:{
+          price:"Price-range $250-$350",
+          warranty: "90 day warranty",
+          duration: "Repair takes 2-3 business days",
+        },
+      },
+      iphonexsmax:{
+        screen: {
+          price: "Up-front Price $330",
+          warranty: "Lifetime Warranty",
+          duration: "Screen Repair takes 15 minutes",
+        },
+        battery:{
+          price:"Up-front Price $75",
+          warranty: "90 day warranty",
+          duration: "Battery Replacement takes 15 minutes",
+        },
+        charging:{
+          price:"Up-front Price $75",
+          warranty: "90 day warranty",
+          duration: "Charging-Port Replacement takes 30 minutes",
+        },
+        water:{
+          price:"Price-range $300 - $450",
+          warranty: "90 day warranty",
+          duration: "Repair takes 2-3 business days",
+        },
+      },
+      iphone11:{
+        screen: {
+          price: "Up-front Price $200",
+          warranty: "Lifetime Warranty",
+          duration: "Screen Repair takes 15 minutes",
+        },
+        battery:{
+          price:"Up-front Price $100",
+          warranty: "90 day warranty",
+          duration: "Battery Replacement takes 15 minutes",
+        },
+        charging:{
+          price:"Up-front Price $100",
+          warranty: "90 day warranty",
+          duration: "Charging-Port Replacement takes 30 minutes",
+        },
+        water:{
+          price:"Price-range $300-$350",
+          warranty: "90 day warranty",
+          duration: "Repair takes 2-3 business days",
+        },
+      },
+      iphone11pro:{
+        screen: {
+          price: "Up-front Price $280",
+          warranty: "Lifetime Warranty",
+          duration: "Screen Repair takes 15 minutes",
+        },
+        battery:{
+          price:"Up-front Price $100",
+          warranty: "90 day warranty",
+          duration: "Battery Replacement takes 15 minutes",
+        },
+        charging:{
+          price:"Up-front Price $100",
+          warranty: "90 day warranty",
+          duration: "Charging-Port Replacement takes 30 minutes",
+        },
+        water:{
+          price:"Price-range $300-$450",
+          warranty: "90 day warranty",
+          duration: "Repair takes 2-3 business days",
+        },
+      },
+      iphone11promax:{
+        screen: {
+          price: "Up-front Price $330",
+          warranty: "Lifetime Warranty",
+          duration: "Screen Repair takes 15 minutes",
+        },
+        battery:{
+          price:"Up-front Price $100",
+          warranty: "90 day warranty",
+          duration: "Battery Replacement takes 15 minutes",
+        },
+        charging:{
+          price:"Up-front Price $100",
+          warranty: "90 day warranty",
+          duration: "Charging-Port Replacement takes 30 minutes",
+        },
+        water:{
+          price:"Price-range $300-$450",
+          warranty: "90 day warranty",
+          duration: "Repair takes 2-3 business days",
+        },
+      },
+
+    }
   }
 
-  if (chooseIssue == "screen" && chooseDeviceModel == "8plus") {
-    $("#total-price-text").text("$120");
-    $("#warranty-text").text("Lifetime Warranty Included");
-    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
-  }
-  if (chooseIssue == "battery" && chooseDeviceModel == "8plus") {
-    $("#total-price-text").text("$80");
-    $("#warranty-text").text("90 Day Warranty Included");
-    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
-  }
-  if (chooseIssue == "charging" && chooseDeviceModel == "8plus") {
-    $("#total-price-text").text("$80");
-    $("#warranty-text").text("90 Day Warranty Included");
-    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
-  }
-  if (chooseIssue == "water" && chooseDeviceModel == "8plus") {
-    $("#total-price-text").text("$160 - $200");
-    $("#warranty-text").text("No Warranty Included");
-    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
-  }
-  if (chooseIssue == "screen" && chooseDeviceModel == "8") {
-    $("#total-price-text").text("$110");
-    $("#warranty-text").text("Lifetime Warranty Included");
-    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
-  }
-  if (chooseIssue == "battery" && chooseDeviceModel == "8") {
-    $("#total-price-text").text("$70");
-    $("#warranty-text").text("90 Day Warranty Included");
-    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
-  }
-  if (chooseIssue == "charging" && chooseDeviceModel == "8") {
-    $("#total-price-text").text("$70");
-    $("#warranty-text").text("90 Day Warranty Included");
-    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
-  }
-  if (chooseIssue == "water" && chooseDeviceModel == "8") {
-    $("#total-price-text").text("$160 - $200");
-    $("#warranty-text").text("No Warranty Included");
-    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
-  }
-  if (chooseIssue == "screen" && chooseDeviceModel == "7plus") {
-    $("#total-price-text").text("$109");
-    $("#warranty-text").text("Lifetime Warranty Included");
-    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
-  }
-  if (chooseIssue == "battery" && chooseDeviceModel == "7plus") {
-    $("#total-price-text").text("$70");
-    $("#warranty-text").text("90 Day Warranty Included");
-    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
-  }
-  if (chooseIssue == "charging" && chooseDeviceModel == "7plus") {
-    $("#total-price-text").text("$70");
-    $("#warranty-text").text("90 Day Warranty Included");
-    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
-  }
-  if (chooseIssue == "water" && chooseDeviceModel == "7plus") {
-    $("#total-price-text").text("$140 - $180");
-    $("#warranty-text").text("No Warranty Included");
-    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
-  }
-  if (chooseIssue == "screen" && chooseDeviceModel == "7") {
-    $("#total-price-text").text("$90");
-    $("#warranty-text").text("Lifetime Warranty Included");
-    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
-  }
-  if (chooseIssue == "battery" && chooseDeviceModel == "7") {
-    $("#total-price-text").text("$70");
-    $("#warranty-text").text("90 Day Warranty Included");
-    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
-  }
-  if (chooseIssue == "charging" && chooseDeviceModel == "7") {
-    $("#total-price-text").text("$70");
-    $("#warranty-text").text("90 Day Warranty Included");
-    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
-  }
-  if (chooseIssue == "water" && chooseDeviceModel == "7") {
-    $("#total-price-text").text("$140 - $180");
-    $("#warranty-text").text("No Warranty Included");
-    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
-  }
-  if (chooseIssue == "screen" && chooseDeviceModel == "6splus") {
-    $("#total-price-text").text("$90");
-    $("#warranty-text").text("Lifetime Warranty Included");
-    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
-  }
-  if (chooseIssue == "battery" && chooseDeviceModel == "6splus") {
-    $("#total-price-text").text("$65");
-    $("#warranty-text").text("90 Day Warranty Included");
-    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
-  }
-  if (chooseIssue == "charging" && chooseDeviceModel == "6splus") {
-    $("#total-price-text").text("$65");
-    $("#warranty-text").text("90 Day Warranty Included");
-    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
-  }
-  if (chooseIssue == "water" && chooseDeviceModel == "6splus") {
-    $("#total-price-text").text("$120 - $160");
-    $("#warranty-text").text("No Warranty Included");
-    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
-  }
-  if (chooseIssue == "screen" && chooseDeviceModel == "6s") {
-    $("#total-price-text").text("$80");
-    $("#warranty-text").text("Lifetime Warranty Included");
-    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
-  }
-  if (chooseIssue == "battery" && chooseDeviceModel == "6s") {
-    $("#total-price-text").text("$60");
-    $("#warranty-text").text("90 Day Warranty Included");
-    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
-  }
-  if (chooseIssue == "charging" && chooseDeviceModel == "6s") {
-    $("#total-price-text").text("$60");
-    $("#warranty-text").text("90 Day Warranty Included");
-    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
-  }
-  if (chooseIssue == "water" && chooseDeviceModel == "6s") {
-    $("#total-price-text").text("$120 - $160");
-    $("#warranty-text").text("No Warranty Included");
-    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
-  }
-  if (chooseIssue == "screen" && chooseDeviceModel == "SE") {
-    $("#total-price-text").text("$70");
-    $("#warranty-text").text("Lifetime Warranty Included");
-    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
-  }
-  if (chooseIssue == "battery" && chooseDeviceModel == "SE") {
-    $("#total-price-text").text("$65");
-    $("#warranty-text").text("90 Day Warranty Included");
-    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
-  }
-  if (chooseIssue == "charging" && chooseDeviceModel == "SE") {
-    $("#total-price-text").text("$45");
-    $("#warranty-text").text("90 Day Warranty Included");
-    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
-  }
-  if (chooseIssue == "water" && chooseDeviceModel == "SE") {
-    $("#total-price-text").text("$120 - $160");
-    $("#warranty-text").text("No Warranty Included");
-    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
-  }
-  if (chooseIssue == "screen" && chooseDeviceModel == "6plus") {
-    $("#total-price-text").text("$80");
-    $("#warranty-text").text("Lifetime Warranty Included");
-    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
-  }
-  if (chooseIssue == "battery" && chooseDeviceModel == "6plus") {
-    $("#total-price-text").text("$60");
-    $("#warranty-text").text("90 Day Warranty Included");
-    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
-  }
-  if (chooseIssue == "charging" && chooseDeviceModel == "6plus") {
-    $("#total-price-text").text("$60");
-    $("#warranty-text").text("90 Day Warranty Included");
-    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
-  }
-  if (chooseIssue == "water" && chooseDeviceModel == "6plus") {
-    $("#total-price-text").text("$120 - $160");
-    $("#warranty-text").text("No Warranty Included");
-    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
-  }
-  if (chooseIssue == "screen" && chooseDeviceModel == "6") {
-    $("#total-price-text").text("$75");
-    $("#warranty-text").text("Lifetime Warranty Included.");
-    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
-  }
-  if (chooseIssue == "battery" && chooseDeviceModel == "6") {
-    $("#total-price-text").text("$50");
-    $("#warranty-text").text("90 Day Warranty Included.");
-    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
-  }
-  if (chooseIssue == "charging" && chooseDeviceModel == "6") {
-    $("#total-price-text").text("$50");
-    $("#warranty-text").text("90 Day Warranty Included.");
-    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
-  }
-  if (chooseIssue == "water" && chooseDeviceModel == "6") {
-    $("#total-price-text").text("$120 - $160");
-    $("#warranty-text").text("No Warranty Included.");
-    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
-  }
-  if (chooseIssue == "screen" && chooseDeviceModel == "5s") {
-    $("#total-price-text").text("$65");
-    $("#warranty-text").text("Lifetime Warranty Included.");
-    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
-  }
-  if (chooseIssue == "battery" && chooseDeviceModel == "5s") {
-    $("#total-price-text").text("$50");
-    $("#warranty-text").text("90 Day Warranty Included.");
-    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
-  }
-  if (chooseIssue == "charging" && chooseDeviceModel == "5s") {
-    $("#total-price-text").text("$50");
-    $("#warranty-text").text("90 Day Warranty Included.");
-    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
 
-  }
-  if (chooseIssue == "water" && chooseDeviceModel == "5s") {
-    $("#total-price-text").text("$100 - $140");
-    $("#warranty-text").text("No Warranty Included");
-    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
-  }
-  if (chooseIssue == "screen" && chooseDeviceModel == "5") {
-    $("#total-price-text").text("$65");
-    $("#warranty-text").text("Lifetime Warranty Included.");
-    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
-  }
-  if (chooseIssue == "battery" && chooseDeviceModel == "5") {
-    $("#total-price-text").text("$45");
-    $("#warranty-text").text("90 Day Warranty Included.");
-    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
-  }
-  if (chooseIssue == "charging" && chooseDeviceModel == "5") {
-    $("#total-price-text").text("$45");
-    $("#warranty-text").text("90 Day Warranty Included.");
-    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
-  }
-  if (chooseIssue == "water" && chooseDeviceModel == "5") {
-    $("#total-price-text").text("$100 - $140");
-    $("#warranty-text").text("No Warranty Included.");
-    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
-  }
+
+
+
+
+
+
+
+
+
+var selectDevices = document.getElementById('select-device').value;
+var iphoneDropdown = document.getElementById('iphones');
+var ipadDropdown = document.getElementById('ipads');
+var selectIpadDevice =document.getElementById('select-ipad-model').value;
+var selectColor = document.getElementById('homeButton');
+//DEVICE MODELS RESPONSIVE
+
+if (selectDevices === "iphone"){
+  iphoneDropdown.style.display = "block"
+  ipadDropdown.style.display = "none"
+}
+
+else if (selectDevices === "ipad") {
+  ipadDropdown.style.display = "block"
+  iphoneDropdown.style.display = "none"
+}
+if (chooseDeviceModel == "x"){
+  selectColor.style.display = "none"
+}
+else if (chooseDeviceModel == "xs") {
+  selectColor.style.display = "none"
+}
+else if (chooseDeviceModel == "xr") {
+  selectColor.style.display = "none"
+}
+else if (chooseDeviceModel == "xsmax") {
+  selectColor.style.display = "none"
+}
+else {
+  selectColor.style.display = "block"
+}
+
   if (chooseIssue == "battery" && chooseDeviceModel == "x") {
-    $("#total-price-text").text("$89");
-    $("#warranty-text").text("90 Day Warranty Included");
-    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
+    priceTitle.innerText = deviceDictionary["iphones"]["iphonex"]["battery"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphonex"]["battery"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphonex"]["battery"]["duration"]
   }
-  if (chooseIssue == "charging" && chooseDeviceModel == "x") {
-    $("#total-price-text").text("$89");
-    $("#warranty-text").text("90 Day Warranty Included");
-    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
+  else if (chooseIssue == "charging" && chooseDeviceModel == "x") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphonex"]["charging"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphonex"]["charging"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphonex"]["charging"]["duration"]
   }
-  if (chooseIssue == "water" && chooseDeviceModel == "x") {
-    $("#total-price-text").text("$200 - $250");
-    $("#warranty-text").text("No Warranty Included");
-    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
+  else if (chooseIssue == "water" && chooseDeviceModel == "x") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphonex"]["water"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphonex"]["water"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphonex"]["water"]["duration"]
   }
-  if (chooseIssue == "screen" && chooseDeviceModel == "x") {
-    $("#total-price-text").text("$200");
-    $("#warranty-text").text("Lifetime Warranty Included");
-    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
+  else if (chooseIssue == "screen" && chooseDeviceModel == "x") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphonex"]["screen"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphonex"]["screen"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphonex"]["screen"]["duration"]
+
   }
-  if (chooseIssue == "screen" && chooseDeviceModel == "xs") {
-    $("#total-price-text").text("$250");
-    $("#warranty-text").text("Lifetime Warranty Included");
-    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
+
+  else if (chooseIssue == "screen" && chooseDeviceModel == "xs") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphonexs"]["screen"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphonexs"]["screen"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphonexs"]["screen"]["duration"]
   }
-  if (chooseIssue == "screen" && chooseDeviceModel == "xsmax") {
-    $("#total-price-text").text("$330");
-    $("#warranty-text").text("Lifetime Warranty Included");
-    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
+  else if (chooseIssue == "battery" && chooseDeviceModel == "xs") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphonexs"]["battery"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphonexs"]["battery"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphonexs"]["battery"]["duration"]
   }
-  if (chooseIssue == "screen" && chooseDeviceModel == "xr") {
-    $("#total-price-text").text("$200");
-    $("#warranty-text").text("Lifetime Warranty Included");
-    $("#repairtime-text").text("Screen Repair only takes 15 minutes.");
+  else if (chooseIssue == "charging" && chooseDeviceModel == "xs") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphonexs"]["charging"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphonexs"]["charging"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphonexs"]["charging"]["duration"]
   }
-  if (chooseIssue == "battery" && chooseDeviceModel == "xsmax") {
-    $("#total-price-text").text("$95");
-    $("#warranty-text").text("90 Day Warranty Included");
-    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
+  else if (chooseIssue == "water" && chooseDeviceModel == "xs") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphonexs"]["water"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphonexs"]["water"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphonexs"]["water"]["duration"]
   }
-  if (chooseIssue == "charging" && chooseDeviceModel == "xsmax") {
-    $("#total-price-text").text("$95");
-    $("#warranty-text").text("90 Day Warranty Included");
-    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
+
+  else if (chooseIssue == "screen" && chooseDeviceModel == "xr") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphonexr"]["screen"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphonexr"]["screen"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphonexr"]["screen"]["duration"]
+  }
+  else if (chooseIssue == "battery" && chooseDeviceModel == "xr") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphonexr"]["battery"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphonexr"]["battery"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphonexr"]["battery"]["duration"]
+  }
+  else if (chooseIssue == "charging" && chooseDeviceModel == "xr") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphonexr"]["charging"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphonexr"]["charging"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphonexr"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "water" && chooseDeviceModel == "xr") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphonexs"]["water"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphonexs"]["water"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphonexs"]["water"]["duration"]
+  }
+  else if (chooseIssue == "screen" && chooseDeviceModel == "xsmax") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphonexsmax"]["screen"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphonexsmax"]["screen"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphonexsmax"]["screen"]["duration"]
+  }
+  else if (chooseIssue == "battery" && chooseDeviceModel == "xsmax") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphonexsmax"]["battery"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphonexsmax"]["battery"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphonexsmax"]["battery"]["duration"]
+  }
+  else if (chooseIssue == "charging" && chooseDeviceModel == "xsmax") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphonexsmax"]["charging"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphonexsmax"]["charging"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphonexsmax"]["charging"]["duration"]
     
   }
-  if (chooseIssue == "water" && chooseDeviceModel == "xsmax") {
-    $("#total-price-text").text("$300 - $350");
-    $("#warranty-text").text("No Warranty Included");
-    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
-  }
-  if (chooseIssue == "battery" && chooseDeviceModel == "xs") {
-    $("#total-price-text").text("$89");
-    $("#warranty-text").text("90 Day Warranty Included");
-    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
-  }
-  if (chooseIssue == "charging" && chooseDeviceModel == "xs") {
-    $("#total-price-text").text("$89");
-    $("#warranty-text").text("90 Day Warranty Included");
-    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
-  }
-  if (chooseIssue == "water" && chooseDeviceModel == "xs") {
-    $("#total-price-text").text("$250 - $300");
-    $("#warranty-text").text("No Warranty Included");
-    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
-  }
-  if (chooseIssue == "battery" && chooseDeviceModel == "xr") {
-    $("#total-price-text").text("$89");
-    $("#warranty-text").text("90 Day Warranty Included");
-    $("#repairtime-text").text("Battery Replacement only takes 15 minutes.");
-  }
-  if (chooseIssue == "charging" && chooseDeviceModel == "xr") {
-    $("#total-price-text").text("$89");
-    $("#warranty-text").text("90 Day Warranty Included");
-    $("#repairtime-text").text("Charging Replacement only takes 15 minutes.");
-  }
-  if (chooseIssue == "water" && chooseDeviceModel == "xr") {
-    $("#total-price-text").text("$200 - $250");
-    $("#warranty-text").text("No Warranty Included");
-    $("#repairtime-text").text("Water Damage Repair takes 3-5 business days.");
+  else if (chooseIssue == "water" && chooseDeviceModel == "xsmax") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphonexsmax"]["water"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphonexsmax"]["water"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphonexsmax"]["water"]["duration"]
   }
 
-  $(document).ready(function() {
-    $(window).scroll(function() {
-      var scroll = $(window).scrollTop();
-      if (scroll > 300) {
-        $("#nav").css();
-      } else {
-        $("#nav").css("background", "#333");
+  else if (chooseIssue === "screen" && chooseDeviceModel === "8plus") {
+      priceTitle.innerText = deviceDictionary["iphones"]["iphone8plus"]["screen"]["price"]
+      warrantyText.innerText = deviceDictionary["iphones"]["iphone8plus"]["screen"]["warranty"]
+      repairtimeText.innerText = deviceDictionary["iphones"]["iphone8plus"]["screen"]["duration"]
+  }
+  else if (chooseIssue == "battery" && chooseDeviceModel == "8plus") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone8plus"]["battery"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone8plus"]["battery"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone8plus"]["battery"]["duration"]
+  }
+  else if (chooseIssue == "charging" && chooseDeviceModel == "8plus") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone8plus"]["charging"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone8plus"]["charging"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone8plus"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "water" && chooseDeviceModel == "8plus") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone8plus"]["water"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone8plus"]["water"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone8plus"]["water"]["duration"]
+  }
+  else if (chooseIssue == "screen" && chooseDeviceModel == "8") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone8"]["screen"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone8"]["screen"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone8"]["screen"]["duration"]
+  }
+  else if (chooseIssue == "battery" && chooseDeviceModel == "8") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone8"]["battery"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone8"]["battery"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone8"]["battery"]["duration"]
+  }
+  else if (chooseIssue == "charging" && chooseDeviceModel == "8") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone8"]["charging"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone8"]["charging"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone8"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "water" && chooseDeviceModel == "8") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone8"]["water"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone8"]["water"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone8"]["water"]["duration"]
+  }
+  else if (chooseIssue == "screen" && chooseDeviceModel == "7plus") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone7plus"]["screen"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone7plus"]["screen"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone7plus"]["screen"]["duration"]
+  }
+  else if (chooseIssue == "battery" && chooseDeviceModel == "7plus") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone7plus"]["battery"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone7plus"]["battery"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone7plus"]["battery"]["duration"]
+  }
+  else if (chooseIssue == "charging" && chooseDeviceModel == "7plus") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone7lus"]["charging"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone7plus"]["charging"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone7plus"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "water" && chooseDeviceModel == "7plus") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone7plus"]["water"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone7plus"]["water"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone7plus"]["water"]["duration"]
+  }
+  else  if (chooseIssue == "screen" && chooseDeviceModel == "7") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone7"]["screen"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone7"]["screen"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone7"]["screen"]["duration"]
+  }
+  else if (chooseIssue == "battery" && chooseDeviceModel == "7") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone7"]["battery"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone7"]["battery"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone7"]["battery"]["duration"]
+  }
+  else if (chooseIssue == "charging" && chooseDeviceModel == "7") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone7"]["charging"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone7"]["charging"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone7"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "water" && chooseDeviceModel == "7") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone7"]["water"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone7"]["water"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone7"]["water"]["duration"]
+  }
+  else if (chooseIssue == "screen" && chooseDeviceModel == "6splus") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone6splus"]["screen"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone6splus"]["screen"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone6splus"]["screen"]["duration"]
+  }
+  else if (chooseIssue == "battery" && chooseDeviceModel == "6splus") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone6splus"]["battery"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone6splus"]["battery"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone6splus"]["battery"]["duration"]
+  }
+  else if (chooseIssue == "charging" && chooseDeviceModel == "6splus") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone6splus"]["charging"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone6splus"]["charging"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone6splus"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "water" && chooseDeviceModel == "6splus") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone6splus"]["water"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone6splus"]["water"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone6splus"]["water"]["duration"]
+  }
+  else if (chooseIssue == "screen" && chooseDeviceModel == "6s") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone6s"]["screen"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone6s"]["screen"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone6s"]["screen"]["duration"]
+  }
+  else if (chooseIssue == "battery" && chooseDeviceModel == "6s") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone6s"]["battery"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone6s"]["battery"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone6s"]["battery"]["duration"]
+  }
+  else if (chooseIssue == "charging" && chooseDeviceModel == "6s") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone6s"]["charging"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone6s"]["charging"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone6s"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "water" && chooseDeviceModel == "6s") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone6s"]["water"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone6s"]["water"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone6s"]["water"]["duration"]
+  }
+  else if (chooseIssue == "screen" && chooseDeviceModel == "6") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone6"]["screen"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone6"]["screen"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone6"]["screen"]["duration"]
+  }
+  else if (chooseIssue == "battery" && chooseDeviceModel == "6") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone6"]["battery"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone6"]["battery"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone6"]["battery"]["duration"]
+  }
+  else if (chooseIssue == "charging" && chooseDeviceModel == "6") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone6"]["charging"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone6"]["charging"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone6"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "water" && chooseDeviceModel == "6") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone6"]["water"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone6"]["water"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone6"]["water"]["duration"]
+  }
+  
+  
+
+  var ipadprices= 
+  {
+    ipads:{
+      ipadmini:{
+        screen: {
+          price: "Upfront Price $100",
+          warranty: "Lifetime Warranty",
+          duration: "Screen Repair takes 15 minutes",
+        },
+        battery:{
+          price:"Upfront Price $100",
+          warranty: "90 day warranty",
+          duration: "Battery Replacement takes 15 minutes",
+        },
+        charging:{
+          price:"Upfront Price $100",
+          warranty: "90 day warranty",
+          duration: "Charging-Port Replacement takes 30 minutes",
+        },
+      },
+      ipadmini2:{
+        price:"",
+        warranty:"",
+        duration:"",
+      },
+      ipadmini3:{
+        price:"",
+        warranty:"",
+        duration:"",
+      },
+      ipad2:{
+        price:"",
+        warranty:"",
+        duration:"",
+      },
+      ipad3:{
+        price:"",
+        warranty:"",
+        duration:"",
+      },
+      ipad4:{
+        price:"",
+        warranty:"",
+        duration:"",
+      },
+      ipad5:{
+        price:"",
+        warranty:"",
+        duration:"",
+      },
+      ipad6:{
+        price:"",
+        warranty:"",
+        duration:"",
+      },
+      ipad7:{
+        price:"",
+        warranty:"",
+        duration:"",
       }
-    });
-  });
+    }
+  }
+
 
   //ipad if statements
-  if (selectIpadIssue == "screen" && selectIpadDevice == "mini4") {
-    $("#total-price-text-ipad").text("249");
+  if (chooseIssue == "screen" && selectIpadDevice == "ipadmini") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadmini"]["screen"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadmini"]["screen"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadmini"]["screen"]["duration"]
   }
-  if (selectIpadIssue == "screen" && selectIpadDevice == "mini3") {
-    $("#total-price-text-ipad").text("209");
+  else if (chooseIssue == "battery" && selectIpadDevice == "ipadmini") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadmini"]["battery"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadmini"]["battery"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadmini"]["battery"]["duration"]
   }
-  if (selectIpadIssue == "screen" && selectIpadDevice == "mini2") {
-    $("#total-price-text-ipad").text("159");
+  else if (chooseIssue == "charging" && selectIpadDevice == "ipadmini") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadmini"]["charging"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadmini"]["charging"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadmini"]["charging"]["duration"]
   }
-  if (selectIpadIssue == "screen" && selectIpadDevice == "mini1") {
-    $("#total-price-text-ipad").text("159");
+  else if (chooseIssue == "screen" && selectIpadDevice == "ipadmini2") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadmini2"]["screen"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadmini2"]["screeen"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadmini2"]["screen"]["duration"]
   }
-  if (selectIpadIssue == "screen" && selectIpadDevice == "ipad5") {
-    $("#total-price-text-ipad").text("209");
+  else if (chooseIssue == "battery" && selectIpadDevice == "ipadmini2") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadmini2"]["battery"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadmini2"]["battery"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadmini2"]["battery"]["duration"]
   }
-  if (selectIpadIssue == "screen" && selectIpadDevice == "air1") {
-    $("#total-price-text-ipad").text("159");
+  else if (chooseIssue == "charging" && selectIpadDevice == "ipadmini2") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadmini2"]["charging"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadmini2"]["charging"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadmini2"]["charging"]["duration"]
   }
-  if (selectIpadIssue == "screen" && selectIpadDevice == "air2") {
-    $("#total-price-text-ipad").text("329");
+  else if (chooseIssue == "screen" && selectIpadDevice == "ipadmini3") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadmini3"]["screen"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadmini3"]["screen"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadmini3"]["screen"]["duration"]
   }
-  if (selectIpadIssue == "screen" && selectIpadDevice == "pro") {
-    $("#total-price-text-ipad").text("249");
+  else if (chooseIssue == "battery" && selectIpadDevice == "ipadmini3") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadmini3"]["battery"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadmini3"]["battery"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadmini3"]["battery"]["duration"]
   }
-  if (selectIpadIssue == "screen" && selectIpadDevice == "ipad4") {
-    $("#total-price-text-ipad").text("89");
+  else if (chooseIssue == "charging" && selectIpadDevice == "ipadmini3") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadmini3"]["charging"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadmini3"]["charging"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadmini3"]["charging"]["duration"]
   }
-  if (selectIpadIssue == "screen" && selectIpadDevice == "ipad3") {
-    $("#total-price-text-ipad").text("89");
+  else if (chooseIssue == "screen" && selectIpadDevice == "ipad2") {
+    priceTitle.innerText = ipadprices["ipads"]["ipad2"]["screen"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipad2"]["screen"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipad2"]["screen"]["duration"]
   }
-  if (selectIpadIssue == "screen" && selectIpadDevice == "ipad2") {
-    $("#total-price-text-ipad").text("89");
+  else if (chooseIssue == "battery" && selectIpadDevice == "ipad2") {
+    priceTitle.innerText = ipadprices["ipads"]["ipad2"]["battery"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipad2"]["battery"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipad2"]["battery"]["duration"]
+  }
+  else if (chooseIssue == "charging" && selectIpadDevice == "ipad2") {
+    priceTitle.innerText = ipadprices["ipads"]["ipad2"]["charging"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipad2"]["charging"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipad2"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "screen" && selectIpadDevice == "ipad3") {
+    priceTitle.innerText = ipadprices["ipads"]["ipad3"]["screen"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipad3"]["screen"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipad3"]["screen"]["duration"]
+  }
+  else if (chooseIssue == "battery" && selectIpadDevice == "ipad3") {
+    priceTitle.innerText = ipadprices["ipads"]["ipad3"]["battery"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipad3"]["battery"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipad3"]["battery"]["duration"]
+  }
+  else if (chooseIssue == "charging" && selectIpadDevice == "ipad3") {
+    priceTitle.innerText = ipadprices["ipads"]["ipad3"]["charging"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipad3"]["charging"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipad3"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "screen" && selectIpadDevice == "ipad4") {
+    priceTitle.innerText = ipadprices["ipads"]["ipad4"]["screen"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipad4"]["screen"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipad4"]["screen"]["duration"]
+  }
+  else if (chooseIssue == "battery" && selectIpadDevice == "ipad4") {
+    priceTitle.innerText = ipadprices["ipads"]["ipad4"]["battery"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipad4"]["battery"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipad4"]["battery"]["duration"]
+  }
+  else if (chooseIssue == "charging" && selectIpadDevice == "ipad4") {
+    priceTitle.innerText = ipadprices["ipads"]["ipad4"]["charging"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipad4"]["charging"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipad4"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "screen" && selectIpadDevice == "ipad5") {
+    priceTitle.innerText = ipadprices["ipads"]["ipad5"]["screen"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipad5"]["screen"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipad5"]["screen"]["duration"]
+  }
+  else if (chooseIssue == "battery" && selectIpadDevice == "ipad5") {
+    priceTitle.innerText = ipadprices["ipads"]["ipad5"]["battery"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipad5"]["battery"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipad5"]["battery"]["duration"]
+  }
+  else if (chooseIssue == "charging" && selectIpadDevice == "ipad5") {
+    priceTitle.innerText = ipadprices["ipads"]["ipad5"]["charging"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipad5"]["charging"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipad5"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "screen" && selectIpadDevice == "ipad6") {
+    priceTitle.innerText = ipadprices["ipads"]["ipad6"]["screen"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipad6"]["screen"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipad6"]["screen"]["duration"]
+  }
+  else if (chooseIssue == "battery" && selectIpadDevice == "ipad6") {
+    priceTitle.innerText = ipadprices["ipads"]["ipad6"]["battery"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipad6"]["battery"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipad6"]["battery"]["duration"]
+  }
+  else if (chooseIssue == "charging" && selectIpadDevice == "ipad6") {
+    priceTitle.innerText = ipadprices["ipads"]["ipad6"]["charging"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipad6"]["charging"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipad6"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "screen" && selectIpadDevice == "ipad7") {
+    priceTitle.innerText = ipadprices["ipads"]["ipad7"]["screen"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipad7"]["screen"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipad7"]["screen"]["duration"]
+  }
+  else if (chooseIssue == "battery" && selectIpadDevice == "ipad7") {
+    priceTitle.innerText = ipadprices["ipads"]["ipad7"]["battery"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipad7"]["battery"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipad7"]["battery"]["duration"]
+  }
+  else if (chooseIssue == "charging" && selectIpadDevice == "ipad7") {
+    priceTitle.innerText = ipadprices["ipads"]["ipad7"]["charging"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipad7"]["charging"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipad7"]["charging"]["duration"]
   }
 }
 
@@ -441,4 +892,4 @@ $(function() {
 // function leadZero(_something) {
 //   if (parseInt(_something) < 10) return "0" + _something;
 //   return _something; //else
-// }
+//}

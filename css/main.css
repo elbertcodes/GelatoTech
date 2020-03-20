@@ -203,7 +203,8 @@
   margin-left: 21vw;
   cursor: pointer;
 }
-
+/* DROPDOWNS */
+#iphones, #ipads{display: none;}
 #nav-items a {
   margin: 0.5rem;
 }
