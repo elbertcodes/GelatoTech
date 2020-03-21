@@ -162,6 +162,14 @@
 /* media queries */
 /* [iphone6](phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  #get-started {
+    background-image: url("https://unsplash.com/photos/vJ24hBps1qY");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5rem;
+  }
+  
   #get-started .title {
     font-size: 2rem;
   }
@@ -240,9 +248,8 @@ nav ul li ul li a:hover {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
 }
-
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
