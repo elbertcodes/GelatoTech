@@ -682,46 +682,430 @@ else {
           warranty: "90 day warranty",
           duration: "Charging-Port Replacement takes 30 minutes",
         },
+      water:{
+        price:"Price-range $300-$450",
+        warranty: "90 day warranty",
+        duration: "Repair takes 2-3 business days",
       },
+    },
       ipadmini2:{
-        price:"",
-        warranty:"",
-        duration:"",
+        screen: {
+          price: "Upfront Price $100",
+          warranty: "Lifetime Warranty",
+          duration: "Screen Repair takes 15 minutes",
+        },
+        battery:{
+          price:"Upfront Price $129",
+          warranty: "90 day warranty",
+          duration: "Battery Replacement takes 15 minutes",
+        },
+        charging:{
+          price:"Upfront Price $100",
+          warranty: "90 day warranty",
+          duration: "Charging-Port Replacement takes 30 minutes",
+        },
+        water:{
+          price:"Price-range $300-$450",
+          warranty: "90 day warranty",
+          duration: "Repair takes 2-3 business days",
+        },
       },
       ipadmini3:{
-        price:"",
-        warranty:"",
-        duration:"",
+        screen: {
+          price: "Upfront Price $150",
+          warranty: "Lifetime Warranty",
+          duration: "Screen Repair takes 15 minutes",
+        },
+        battery:{
+          price:"Upfront Price $130",
+          warranty: "90 day warranty",
+          duration: "Battery Replacement takes 15 minutes",
+        },
+        charging:{
+          price:"Upfront Price $130",
+          warranty: "90 day warranty",
+          duration: "Charging-Port Replacement takes 30 minutes",
+        },
+        water:{
+          price:"Price-range $300-$450",
+          warranty: "90 day warranty",
+          duration: "Repair takes 2-3 business days",
+        },
       },
+      ipadmini4:{
+        screen: {
+          price: "Upfront Price $280",
+          warranty: "Lifetime Warranty",
+          duration: "Screen Repair takes 15 minutes",
+        },
+        battery:{
+          price:"Upfront Price $180",
+          warranty: "90 day warranty",
+          duration: "Battery Replacement takes 15 minutes",
+        },
+        charging:{
+          price:"Upfront Price $180",
+          warranty: "90 day warranty",
+          duration: "Charging-Port Replacement takes 30 minutes",
+        }, 
+        water:{
+          price:"Price-range $300-$450",
+          warranty: "90 day warranty",
+          duration: "Repair takes 2-3 business days",
+        },
+      },
+      ipadmini5:{
+        screen: {
+          price: "Upfront Price $290",
+          warranty: "Lifetime Warranty",
+          duration: "Screen Repair takes 15 minutes",
+        },
+        battery:{
+          price:"Upfront Price $190",
+          warranty: "90 day warranty",
+          duration: "Battery Replacement takes 15 minutes",
+        },
+        charging:{
+          price:"Upfront Price $190",
+          warranty: "90 day warranty",
+          duration: "Charging-Port Replacement takes 30 minutes",
+        },
+        water:{
+          price:"Price-range $300-$450",
+          warranty: "90 day warranty",
+          duration: "Repair takes 2-3 business days",
+        },
+      },   
       ipad2:{
-        price:"",
-        warranty:"",
-        duration:"",
+        screen: {
+          price: "Upfront Price $150",
+          warranty: "Lifetime Warranty",
+          duration: "Screen Repair takes 15 minutes",
+        },
+        battery:{
+          price:"Upfront Price $130",
+          warranty: "90 day warranty",
+          duration: "Battery Replacement takes 15 minutes",
+        },
+        charging:{
+          price:"Upfront Price $130",
+          warranty: "90 day warranty",
+          duration: "Charging-Port Replacement takes 30 minutes",
+        },
+        water:{
+          price:"Price-range $300-$450",
+          warranty: "90 day warranty",
+          duration: "Repair takes 2-3 business days",
+        },
       },
       ipad3:{
-        price:"",
-        warranty:"",
-        duration:"",
+        screen: {
+          price: "Upfront Price $150",
+          warranty: "Lifetime Warranty",
+          duration: "Screen Repair takes 15 minutes",
+        },
+        battery:{
+          price:"Upfront Price $130",
+          warranty: "90 day warranty",
+          duration: "Battery Replacement takes 15 minutes",
+        },
+        charging:{
+          price:"Upfront Price $130",
+          warranty: "90 day warranty",
+          duration: "Charging-Port Replacement takes 30 minutes",
+        },
+        water:{
+          price:"Price-range $300-$450",
+          warranty: "90 day warranty",
+          duration: "Repair takes 2-3 business days",
+        },
       },
       ipad4:{
-        price:"",
-        warranty:"",
-        duration:"",
+        screen: {
+          price: "Upfront Price $150",
+          warranty: "Lifetime Warranty",
+          duration: "Screen Repair takes 15 minutes",
+        },
+        battery:{
+          price:"Upfront Price $130",
+          warranty: "90 day warranty",
+          duration: "Battery Replacement takes 15 minutes",
+        },
+        charging:{
+          price:"Upfront Price $130",
+          warranty: "90 day warranty",
+          duration: "Charging-Port Replacement takes 30 minutes",
+        },
+        water:{
+          price:"Price-range $300-$450",
+          warranty: "90 day warranty",
+          duration: "Repair takes 2-3 business days",
+        },
       },
       ipad5:{
-        price:"",
-        warranty:"",
-        duration:"",
+        screen: {
+          price: "Upfront Price $210",
+          warranty: "Lifetime Warranty",
+          duration: "Screen Repair takes 15 minutes",
+        },
+        battery:{
+          price:"Upfront Price $130",
+          warranty: "90 day warranty",
+          duration: "Battery Replacement takes 15 minutes",
+        },
+        charging:{
+          price:"Upfront Price $130",
+          warranty: "90 day warranty",
+          duration: "Charging-Port Replacement takes 30 minutes",
+        },
+        water:{
+          price:"Price-range $300-$450",
+          warranty: "90 day warranty",
+          duration: "Repair takes 2-3 business days",
+        },
       },
       ipad6:{
-        price:"",
-        warranty:"",
-        duration:"",
+        screen: {
+          price: "Upfront Price $210",
+          warranty: "Lifetime Warranty",
+          duration: "Screen Repair takes 15 minutes",
+        },
+        battery:{
+          price:"Upfront Price $130",
+          warranty: "90 day warranty",
+          duration: "Battery Replacement takes 15 minutes",
+        },
+        charging:{
+          price:"Upfront Price $130",
+          warranty: "90 day warranty",
+          duration: "Charging-Port Replacement takes 30 minutes",
+        },
+        water:{
+          price:"Price-range $300-$450",
+          warranty: "90 day warranty",
+          duration: "Repair takes 2-3 business days",
+        },
       },
       ipad7:{
-        price:"",
-        warranty:"",
-        duration:"",
+        screen: {
+          price: "Upfront Price $200",
+          warranty: "Lifetime Warranty",
+          duration: "Screen Repair takes 15 minutes",
+        },
+        battery:{
+          price:"Upfront Price $130",
+          warranty: "90 day warranty",
+          duration: "Battery Replacement takes 15 minutes",
+        },
+        charging:{
+          price:"Upfront Price $130",
+          warranty: "90 day warranty",
+          duration: "Charging-Port Replacement takes 30 minutes",
+        },
+        water:{
+          price:"Price-range $300-$450",
+          warranty: "90 day warranty",
+          duration: "Repair takes 2-3 business days",
+        },
+      },
+        ipadair:{
+          screen: {
+            price: "Upfront Price $150",
+            warranty: "Lifetime Warranty",
+            duration: "Screen Repair takes 15 minutes",
+          },
+          battery:{
+            price:"Upfront Price $130",
+            warranty: "90 day warranty",
+            duration: "Battery Replacement takes 15 minutes",
+          },
+          charging:{
+            price:"Upfront Price $130",
+            warranty: "90 day warranty",
+            duration: "Charging-Port Replacement takes 30 minutes",
+          },
+          water:{
+            price:"Price-range $300-$450",
+            warranty: "90 day warranty",
+            duration: "Repair takes 2-3 business days",
+          },
+          ipadair2:{
+            screen: {
+              price: "Upfront Price $300",
+              warranty: "Lifetime Warranty",
+              duration: "Screen Repair takes 15 minutes",
+            },
+            battery:{
+              price:"Upfront Price $130",
+              warranty: "90 day warranty",
+              duration: "Battery Replacement takes 15 minutes",
+            },
+            charging:{
+              price:"Upfront Price $130",
+              warranty: "90 day warranty",
+              duration: "Charging-Port Replacement takes 30 minutes",
+            },
+            water:{
+              price:"Price-range $300-$450",
+              warranty: "90 day warranty",
+              duration: "Repair takes 2-3 business days",
+            },
+          },
+        },
+        ipadair3:{
+          screen: {
+            price: "Upfront Price $300",
+            warranty: "Lifetime Warranty",
+            duration: "Screen Repair takes 15 minutes",
+          },
+          battery:{
+            price:"Upfront Price $230",
+            warranty: "90 day warranty",
+            duration: "Battery Replacement takes 15 minutes",
+          },
+          charging:{
+            price:"Upfront Price $230",
+            warranty: "90 day warranty",
+            duration: "Charging-Port Replacement takes 30 minutes",
+          },
+          water:{
+            price:"Price-range $300-$450",
+            warranty: "90 day warranty",
+            duration: "Repair takes 2-3 business days",
+          }, //ipad pro
+          ipadpro1:{
+            screen: {
+              price: "Upfront Price $300",
+              warranty: "Lifetime Warranty",
+              duration: "Screen Repair takes 15 minutes",
+            },
+            battery:{
+              price:"Upfront Price $250",
+              warranty: "90 day warranty",
+              duration: "Battery Replacement takes 15 minutes",
+            },
+            charging:{
+              price:"Upfront Price $250",
+              warranty: "90 day warranty",
+              duration: "Charging-Port Replacement takes 30 minutes",
+            },
+            water:{
+              price:"Price-range $300-$450",
+              warranty: "90 day warranty",
+              duration: "Repair takes 2-3 business days",
+            },
+          },
+          ipadpro2:{
+            screen: {
+              price: "Upfront Price $350",
+              warranty: "Lifetime Warranty",
+              duration: "Screen Repair takes 15 minutes",
+            },
+            battery:{
+              price:"Upfront Price $230",
+              warranty: "90 day warranty",
+              duration: "Battery Replacement takes 15 minutes",
+            },
+            charging:{
+              price:"Upfront Price $230",
+              warranty: "90 day warranty",
+              duration: "Charging-Port Replacement takes 30 minutes",
+            },
+            water:{
+              price:"Price-range $500-$550",
+              warranty: "90 day warranty",
+              duration: "Repair takes 2-3 business days",
+            },
+          },
+        },
+        ipadpro3:{
+          screen: {
+            price: "Upfront Price $350",
+            warranty: "Lifetime Warranty",
+            duration: "Screen Repair takes 15 minutes",
+          },
+          battery:{
+            price:"Upfront Price $230",
+            warranty: "90 day warranty",
+            duration: "Battery Replacement takes 15 minutes",
+          },
+          charging:{
+            price:"Upfront Price $230",
+            warranty: "90 day warranty",
+            duration: "Charging-Port Replacement takes 30 minutes",
+          },
+          water:{
+            price:"Price-range $500-$550",
+            warranty: "90 day warranty",
+            duration: "Repair takes 2-3 business days",
+          },
+        },
+        ipadpro12:{
+          screen: {
+            price: "Upfront Price $450",
+            warranty: "Lifetime Warranty",
+            duration: "Screen Repair takes 15 minutes",
+          },
+          battery:{
+            price:"Upfront Price $230",
+            warranty: "90 day warranty",
+            duration: "Battery Replacement takes 15 minutes",
+          },
+          charging:{
+            price:"Upfront Price $230",
+            warranty: "90 day warranty",
+            duration: "Charging-Port Replacement takes 30 minutes",
+          },
+          water:{
+            price:"Price-range $600-$650",
+            warranty: "90 day warranty",
+            duration: "Repair takes 2-3 business days",
+          },
+        },
+        ipadpro121:{
+          screen: {
+            price: "Upfront Price $450",
+            warranty: "Lifetime Warranty",
+            duration: "Screen Repair takes 15 minutes",
+          },
+          battery:{
+            price:"Upfront Price $230",
+            warranty: "90 day warranty",
+            duration: "Battery Replacement takes 15 minutes",
+          },
+          charging:{
+            price:"Upfront Price $230",
+            warranty: "90 day warranty",
+            duration: "Charging-Port Replacement takes 30 minutes",
+          },
+          water:{
+            price:"Price-range $600-$680",
+            warranty: "90 day warranty",
+            duration: "Repair takes 2-3 business days",
+          },
+        },
+        ipadpro123:{
+          screen: {
+            price: "Upfront Price $550",
+            warranty: "Lifetime Warranty",
+            duration: "Screen Repair takes 15 minutes",
+          },
+          battery:{
+            price:"Upfront Price $330",
+            warranty: "90 day warranty",
+            duration: "Battery Replacement takes 15 minutes",
+          },
+          charging:{
+            price:"Upfront Price $330",
+            warranty: "90 day warranty",
+            duration: "Charging-Port Replacement takes 30 minutes",
+          },
+          water:{
+            price:"Price-range $600-$680",
+            warranty: "90 day warranty",
+            duration: "Repair takes 2-3 business days",
+          },
+          
       }
     }
   }
@@ -743,6 +1127,11 @@ else {
     warrantyText.innerText = ipadprices["ipads"]["ipadmini"]["charging"]["warranty"]
     repairtimeText.innerText = ipadprices["ipads"]["ipadmini"]["charging"]["duration"]
   }
+  else if (chooseIssue == "water" && selectIpadDevice == "ipadmini") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadmini"]["water"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadmini"]["water"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadmini"]["water"]["duration"]
+  }
   else if (chooseIssue == "screen" && selectIpadDevice == "ipadmini2") {
     priceTitle.innerText = ipadprices["ipads"]["ipadmini2"]["screen"]["price"]
     warrantyText.innerText = ipadprices["ipads"]["ipadmini2"]["screeen"]["warranty"]
@@ -757,6 +1146,11 @@ else {
     priceTitle.innerText = ipadprices["ipads"]["ipadmini2"]["charging"]["price"]
     warrantyText.innerText = ipadprices["ipads"]["ipadmini2"]["charging"]["warranty"]
     repairtimeText.innerText = ipadprices["ipads"]["ipadmini2"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "water" && selectIpadDevice == "ipadmini2") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadmini2"]["water"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadmini2"]["water"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadmini2"]["water"]["duration"]
   }
   else if (chooseIssue == "screen" && selectIpadDevice == "ipadmini3") {
     priceTitle.innerText = ipadprices["ipads"]["ipadmini3"]["screen"]["price"]
@@ -773,6 +1167,51 @@ else {
     warrantyText.innerText = ipadprices["ipads"]["ipadmini3"]["charging"]["warranty"]
     repairtimeText.innerText = ipadprices["ipads"]["ipadmini3"]["charging"]["duration"]
   }
+  else if (chooseIssue == "water" && selectIpadDevice == "ipadmini3") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadmini3"]["water"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadmini3"]["water"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadmini3"]["water"]["duration"]
+  }
+  else if (chooseIssue == "screen" && selectIpadDevice == "ipadmini4") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadmini4"]["screen"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadmini4"]["screen"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadmini4"]["screen"]["duration"]
+  }
+  else if (chooseIssue == "battery" && selectIpadDevice == "ipadmini4") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadmini4"]["battery"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadmini4"]["battery"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadmini4"]["battery"]["duration"]
+  }
+  else if (chooseIssue == "charging" && selectIpadDevice == "ipadmini4") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadmini4"]["charging"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadmini4"]["charging"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadmini4"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "water" && selectIpadDevice == "ipadmini4") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadmini4"]["water"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadmini4"]["water"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadmini4"]["water"]["duration"]
+  }
+  else if (chooseIssue == "screen" && selectIpadDevice == "ipadmini5") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadmini5"]["screen"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadmini5"]["screen"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadmini5"]["screen"]["duration"]
+  }
+  else if (chooseIssue == "battery" && selectIpadDevice == "ipadmini5") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadmini5"]["battery"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadmini5"]["battery"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadmini5"]["battery"]["duration"]
+  }
+  else if (chooseIssue == "charging" && selectIpadDevice == "ipadmini5") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadmini5"]["charging"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadmini5"]["charging"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadmini5"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "water" && selectIpadDevice == "ipadmini5") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadmini5"]["water"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadmini5"]["water"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadmini5"]["water"]["duration"]
+  }
   else if (chooseIssue == "screen" && selectIpadDevice == "ipad2") {
     priceTitle.innerText = ipadprices["ipads"]["ipad2"]["screen"]["price"]
     warrantyText.innerText = ipadprices["ipads"]["ipad2"]["screen"]["warranty"]
@@ -787,6 +1226,11 @@ else {
     priceTitle.innerText = ipadprices["ipads"]["ipad2"]["charging"]["price"]
     warrantyText.innerText = ipadprices["ipads"]["ipad2"]["charging"]["warranty"]
     repairtimeText.innerText = ipadprices["ipads"]["ipad2"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "water" && selectIpadDevice == "ipad2") {
+    priceTitle.innerText = ipadprices["ipads"]["ipad2"]["water"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipad2"]["water"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipad2"]["water"]["duration"]
   }
   else if (chooseIssue == "screen" && selectIpadDevice == "ipad3") {
     priceTitle.innerText = ipadprices["ipads"]["ipad3"]["screen"]["price"]
@@ -803,6 +1247,11 @@ else {
     warrantyText.innerText = ipadprices["ipads"]["ipad3"]["charging"]["warranty"]
     repairtimeText.innerText = ipadprices["ipads"]["ipad3"]["charging"]["duration"]
   }
+  else if (chooseIssue == "water" && selectIpadDevice == "ipad3") {
+    priceTitle.innerText = ipadprices["ipads"]["ipad3"]["water"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipad3"]["water"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipad3"]["water"]["duration"]
+  }
   else if (chooseIssue == "screen" && selectIpadDevice == "ipad4") {
     priceTitle.innerText = ipadprices["ipads"]["ipad4"]["screen"]["price"]
     warrantyText.innerText = ipadprices["ipads"]["ipad4"]["screen"]["warranty"]
@@ -817,6 +1266,11 @@ else {
     priceTitle.innerText = ipadprices["ipads"]["ipad4"]["charging"]["price"]
     warrantyText.innerText = ipadprices["ipads"]["ipad4"]["charging"]["warranty"]
     repairtimeText.innerText = ipadprices["ipads"]["ipad4"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "water" && selectIpadDevice == "ipad4") {
+    priceTitle.innerText = ipadprices["ipads"]["ipad4"]["water"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipad4"]["water"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipad4"]["water"]["duration"]
   }
   else if (chooseIssue == "screen" && selectIpadDevice == "ipad5") {
     priceTitle.innerText = ipadprices["ipads"]["ipad5"]["screen"]["price"]
@@ -833,6 +1287,11 @@ else {
     warrantyText.innerText = ipadprices["ipads"]["ipad5"]["charging"]["warranty"]
     repairtimeText.innerText = ipadprices["ipads"]["ipad5"]["charging"]["duration"]
   }
+  else if (chooseIssue == "water" && selectIpadDevice == "ipad5") {
+    priceTitle.innerText = ipadprices["ipads"]["ipad5"]["water"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipad5"]["water"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipad5"]["water"]["duration"]
+  }
   else if (chooseIssue == "screen" && selectIpadDevice == "ipad6") {
     priceTitle.innerText = ipadprices["ipads"]["ipad6"]["screen"]["price"]
     warrantyText.innerText = ipadprices["ipads"]["ipad6"]["screen"]["warranty"]
@@ -847,6 +1306,11 @@ else {
     priceTitle.innerText = ipadprices["ipads"]["ipad6"]["charging"]["price"]
     warrantyText.innerText = ipadprices["ipads"]["ipad6"]["charging"]["warranty"]
     repairtimeText.innerText = ipadprices["ipads"]["ipad6"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "water" && selectIpadDevice == "ipad6") {
+    priceTitle.innerText = ipadprices["ipads"]["ipad6"]["water"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipad6"]["water"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipad6"]["water"]["duration"]
   }
   else if (chooseIssue == "screen" && selectIpadDevice == "ipad7") {
     priceTitle.innerText = ipadprices["ipads"]["ipad7"]["screen"]["price"]
@@ -863,6 +1327,192 @@ else {
     warrantyText.innerText = ipadprices["ipads"]["ipad7"]["charging"]["warranty"]
     repairtimeText.innerText = ipadprices["ipads"]["ipad7"]["charging"]["duration"]
   }
+  else if (chooseIssue == "water" && selectIpadDevice == "ipad7") {
+    priceTitle.innerText = ipadprices["ipads"]["ipad7"]["water"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipad7"]["water"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipad7"]["water"]["duration"]
+  }
+  else if (chooseIssue == "screen" && selectIpadDevice == "ipadair") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadair"]["screen"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadair"]["screen"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadair"]["screen"]["duration"]
+  }
+  else if (chooseIssue == "battery" && selectIpadDevice == "ipadair") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadair"]["battery"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadair"]["battery"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadair"]["battery"]["duration"]
+  }
+  else if (chooseIssue == "charging" && selectIpadDevice == "ipadair") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadair"]["charging"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadair"]["charging"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadair"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "water" && selectIpadDevice == "ipadair") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadair"]["water"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadair"]["water"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadair"]["water"]["duration"]
+  }
+  else if (chooseIssue == "screen" && selectIpadDevice == "ipadair2") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadair2"]["screen"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadair2"]["screen"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadair2"]["screen"]["duration"]
+  }
+  else if (chooseIssue == "battery" && selectIpadDevice == "ipadair2") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadair2"]["battery"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadair2"]["battery"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadair2"]["battery"]["duration"]
+  }
+  else if (chooseIssue == "charging" && selectIpadDevice == "ipadair2") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadair2"]["charging"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadair2"]["charging"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadair2"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "water" && selectIpadDevice == "ipadair2") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadair2"]["water"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadair2"]["water"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadair2"]["water"]["duration"]
+  }
+  else if (chooseIssue == "screen" && selectIpadDevice == "ipadair3") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadair3"]["screen"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadair3"]["screen"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadair3"]["screen"]["duration"]
+  }
+  else if (chooseIssue == "battery" && selectIpadDevice == "ipadair3") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadair3"]["battery"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadair3"]["battery"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadair3"]["battery"]["duration"]
+  }
+  else if (chooseIssue == "charging" && selectIpadDevice == "ipadair3") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadair3"]["charging"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadair3"]["charging"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadair3"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "water" && selectIpadDevice == "ipadair3") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadair3"]["water"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadair3"]["water"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadair3"]["water"]["duration"]
+  }
+  else if (chooseIssue == "screen" && selectIpadDevice == "ipadpro1") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadpro1"]["screen"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadpro9.7"]["screen"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadpro9.7"]["screen"]["duration"]
+  }
+  else if (chooseIssue == "battery" && selectIpadDevice == "ipadpro1") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadpro1"]["battery"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadpro1"]["battery"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadpro1"]["battery"]["duration"]
+  }
+  else if (chooseIssue == "charging" && selectIpadDevice == "ipadpro1") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadpro1"]["charging"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadpro1"]["charging"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadpro1"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "water" && selectIpadDevice == "ipadpro1") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadpro1"]["water"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadpro1"]["water"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadpro1"]["water"]["duration"]
+  }
+  else if (chooseIssue == "screen" && selectIpadDevice == "ipadpro2") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadpro2"]["screen"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadpro2"]["screen"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadpro2"]["screen"]["duration"]
+  }
+  else if (chooseIssue == "battery" && selectIpadDevice == "ipadpro2") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadpro2"]["battery"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadpro2"]["battery"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadpro2"]["battery"]["duration"]
+  }
+  else if (chooseIssue == "charging" && selectIpadDevice == "ipadpro2") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadpro2"]["charging"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadpro2"]["charging"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadpro2"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "water" && selectIpadDevice == "ipadpro2") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadpro2"]["water"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadpro2"]["water"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadpro2"]["water"]["duration"]
+  }
+  else if (chooseIssue == "screen" && selectIpadDevice == "ipadpro3") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadpro3"]["screen"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadpro3"]["screen"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadpro3"]["screen"]["duration"]
+  }
+  else if (chooseIssue == "battery" && selectIpadDevice == "ipadpro3") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadpro3"]["battery"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadpro3"]["battery"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadpro3"]["battery"]["duration"]
+  }
+  else if (chooseIssue == "charging" && selectIpadDevice == "ipadpro3") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadpro3"]["charging"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadpro3"]["charging"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadpro3"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "water" && selectIpadDevice == "ipadpro3") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadpro3"]["water"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadpro3"]["water"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadpro3"]["water"]["duration"]
+  }
+  else if (chooseIssue == "screen" && selectIpadDevice == "ipadpro12") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadpro12"]["screen"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadpro12"]["screen"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadpro12"]["screen"]["duration"]
+  }
+  else if (chooseIssue == "battery" && selectIpadDevice == "ipadpro12") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadpro12"]["battery"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadpro12"]["battery"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadpro12"]["battery"]["duration"]
+  }
+  else if (chooseIssue == "charging" && selectIpadDevice == "ipadpro12") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadpro12"]["charging"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadpro12"]["charging"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadpro12"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "water" && selectIpadDevice == "ipadpro12") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadpro12"]["water"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadpro12"]["water"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadpro12"]["water"]["duration"]
+  }
+  else if (chooseIssue == "screen" && selectIpadDevice == "ipadpro122") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadpro122"]["screen"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadpro122"]["screen"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadpro122"]["screen"]["duration"]
+  }
+  else if (chooseIssue == "battery" && selectIpadDevice == "ipadpro122") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadpro122"]["battery"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadpro122"]["battery"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadpro122"]["battery"]["duration"]
+  }
+  else if (chooseIssue == "charging" && selectIpadDevice == "ipadpro122") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadpro122"]["charging"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadpro122"]["charging"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadpro122"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "water" && selectIpadDevice == "ipadpro122") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadpro122"]["water"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadpro122"]["water"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadpro122"]["water"]["duration"]
+  }
+  else if (chooseIssue == "screen" && selectIpadDevice == "ipadpro123") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadpro123"]["screen"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadpro123"]["screen"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadpro123"]["screen"]["duration"]
+  }
+  else if (chooseIssue == "battery" && selectIpadDevice == "ipadpro123") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadpro123"]["battery"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadpro123"]["battery"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadpro123"]["battery"]["duration"]
+  }
+  else if (chooseIssue == "charging" && selectIpadDevice == "ipadpro123") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadpro123"]["charging"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadpro123"]["charging"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadpro123"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "water" && selectIpadDevice == "ipadpro123") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadpro123"]["water"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadpro123"]["water"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadpro123"]["water"]["duration"]
+  }
+
 }
 
 $(function() {
