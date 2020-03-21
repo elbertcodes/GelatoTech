@@ -778,7 +778,7 @@ else {
       },   
       ipad2:{
         screen: {
-          price: "Upfront Price $150",
+          price: "Upfront Price $140",
           warranty: "Lifetime Warranty",
           duration: "Screen Repair takes 15 minutes",
         },
@@ -800,7 +800,7 @@ else {
       },
       ipad3:{
         screen: {
-          price: "Upfront Price $150",
+          price: "Upfront Price $140",
           warranty: "Lifetime Warranty",
           duration: "Screen Repair takes 15 minutes",
         },
@@ -822,7 +822,7 @@ else {
       },
       ipad4:{
         screen: {
-          price: "Upfront Price $150",
+          price: "Upfront Price $140",
           warranty: "Lifetime Warranty",
           duration: "Screen Repair takes 15 minutes",
         },
@@ -844,7 +844,7 @@ else {
       },
       ipad5:{
         screen: {
-          price: "Upfront Price $210",
+          price: "Upfront Price $150",
           warranty: "Lifetime Warranty",
           duration: "Screen Repair takes 15 minutes",
         },
@@ -866,7 +866,7 @@ else {
       },
       ipad6:{
         screen: {
-          price: "Upfront Price $210",
+          price: "Upfront Price $150",
           warranty: "Lifetime Warranty",
           duration: "Screen Repair takes 15 minutes",
         },
