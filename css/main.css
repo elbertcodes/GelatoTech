@@ -163,7 +163,7 @@
 /* [iphone6](phones, 600px and down) */
 @media only screen and (max-width: 500px) {
   #get-started {
-    background-image: url("https://i.postimg.cc/43FHhc48/Bitmap.jpg");
+    background-image: url("https://images.unsplash.com/photo-1556656793-08538906a9f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80");
     background-size: cover;
     background-attachment: none;
     background-position: center;
@@ -188,11 +188,11 @@
     padding: 4rem 0;
   }
   #hero .title {
-    font-size: 2rem;
-    margin-top: 2rem;
+    font-size: 1.8rem;
+    margin-top: 3rem;
   }
   #hero .subtitle {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
   }
   #works h2 {
     font-size: 2rem;
