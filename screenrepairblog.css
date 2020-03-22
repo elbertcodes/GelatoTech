@@ -110,9 +110,22 @@
     margin-top:3rem;
 }
 @media only screen and (max-width: 600px) {
+  
+  #blog2 h1 {
+    font-size: 25px;
+  }
+  #blog2 h5 {
+    font-size: 20px;
+  }
+  #blog2 p {
+    font-size: 20px;
+  }
     .blog-container{
         padding: 2rem ;
     }
+    .blog-container ul{
+      font-size: 16px;
+  }
     .sf{
         font-size: 0rem;
     }
