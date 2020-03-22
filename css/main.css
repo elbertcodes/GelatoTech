@@ -163,15 +163,15 @@
 /* [iphone6](phones, 600px and down) */
 @media only screen and (max-width: 500px) {
   #get-started {
-    background-image: url("https://images.unsplash.com/photo-1556656793-08538906a9f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80");
+    background-image: url("https://i.postimg.cc/43FHhc48/Bitmap.jpg");
     background-size: cover;
     background-attachment: none;
     background-position: center;
     background-repeat: no-repeat;
   }
-
-
-  
+  #services header {
+  font-size: 1.8rem;
+  }
   #get-started .title {
     font-size: 2rem;
   }
@@ -179,6 +179,9 @@
     font-size: 1rem;
   }
   #repair h1 {
+    font-size: 1.5rem;
+  }
+  #repair header {
     font-size: 1.8rem;
   }
   #repair .subtitle {
