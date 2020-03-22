@@ -204,6 +204,9 @@
     list-style-type: none;
     padding: 0
   }
+  #why-us p {
+    font-size: 19px;
+  }
   }
   #why-us h3 {
     font-size: 1rem;
