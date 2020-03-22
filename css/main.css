@@ -90,11 +90,10 @@
 }
 #get-started {
   background-image: url("https://images.unsplash.com/photo-1556656793-08538906a9f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80");
-  
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment:fixed;
+  /* background-attachment:fixed; */
   padding: 5rem;
 }
 
@@ -161,6 +160,15 @@
 
 /* media queries */
 /* [iphone6](phones, 600px and down) */
+@media only screen and (max-width: 500px) {
+  #get-started {
+    background-image: url("https://i.postimg.cc/43FHhc48/Bitmap.jpg");
+    background-size: cover;
+    background-attachment: none;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
 
   
   #get-started .title {
@@ -244,8 +252,12 @@ nav ul li ul li a:hover {
 @media only screen and (max-width: 768px) {
 }
 
+
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 600px) {
+  #get-started{
+    background-attachment: fixed;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

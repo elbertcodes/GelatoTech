@@ -55,7 +55,6 @@
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     height: 100%;
     width: 100%;
     padding: 5rem;
@@ -89,6 +88,9 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  #get-started{
+    background-attachment: fixed;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -128,7 +130,6 @@
         background-size: cover;
         background-position: left;
         background-repeat: no-repeat;
-        background-attachment: fixed;
         padding: 5rem;
       }
       #get-started .title {
