@@ -161,14 +161,7 @@
 
 /* media queries */
 /* [iphone6](phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  #get-started {
-    background-image: url("https://unsplash.com/photos/vJ24hBps1qY");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 5rem;
-  }
+
   
   #get-started .title {
     font-size: 2rem;
