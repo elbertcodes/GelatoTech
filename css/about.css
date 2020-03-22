@@ -86,16 +86,11 @@
 /* about */
 .about-container {
   background-color: #636363;
-  padding: 4rem;
+  padding: 3rem;
   margin: 5rem auto;
   border-radius: 8px;
 }
-.about-container img {
-  border-radius: 5px;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .about-container p {
   color: white;
 }
@@ -122,11 +117,19 @@
 /* media queries */
 /* [iphone6](phones, 600px and down) */
 @media only screen and (max-width: 700px) {
+  .about-container p {
+    color: white;
+    font-size: 25px !important;
+  }
+  .about-container h1{
+    color: white;
+    font-size: 45px !important;
+  }
   #hero h1 {
-    font-size: 2rem !important;
+    font-size: 2.5rem !important;
   }
   #hero h2 {
-    font-size: 1rem !important;
+    font-size: 1.5rem !important;
   }
   #technician h1 {
     font-size: 2rem !important;
