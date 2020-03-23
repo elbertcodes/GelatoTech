@@ -75,3 +75,23 @@
   .date li{
     padding: 1rem;
   }
+
+  /* media queries */
+/* [iphone6](phones, 600px and down) */
+@media only screen and (max-width: 700px) {
+  .first p{
+    font-size: 16px;
+  }
+  .terms ul li{
+    font-size: 13px;
+  }
+  .ourwarranty li{
+    font-size: 13px;
+  }
+  .ourwarranty h5 {
+    font-size: 15px;
+  }
+  .terms h2 {
+    font-size: 20px;
+  }
+}
