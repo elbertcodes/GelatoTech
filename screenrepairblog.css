@@ -49,6 +49,9 @@
 .gelatotech{
     margin-top: 5rem;
 }
+.date li{
+  padding: 1rem;
+}
 
 #get-started {
     background-image: url("https://i.postimg.cc/J09L22pc/test10.png");

@@ -4,6 +4,24 @@
     justify-items: center;
     grid-template-columns: auto auto auto auto auto auto;
   }
+  .terms{
+    padding:80px;
+    color: #595959;
+  }
+  
+  .first p{
+    font-size: 20px;
+  }
+  .terms ul li{
+    font-size: 18px;
+  }
+  .ourwarranty li{
+    font-size: 18px;
+  }
+  .ourwarranty h5 {
+    font-size: 20px;
+  }
+
   
   /* social icons */
   #twitter {
@@ -53,4 +71,7 @@
   
   #nav-items a {
     margin: 0.5rem;
+  }
+  .date li{
+    padding: 1rem;
   }

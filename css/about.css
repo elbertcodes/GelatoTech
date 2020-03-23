@@ -114,6 +114,9 @@
 #why-us ul li {
   padding: 0.5rem;
 }
+.date li{
+  padding: 1rem;
+}
 /* media queries */
 /* [iphone6](phones, 600px and down) */
 @media only screen and (max-width: 700px) {
