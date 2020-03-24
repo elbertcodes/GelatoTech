@@ -73,6 +73,9 @@
   background-position: 100%;
   padding: 5rem 0;
 }
+.notification {
+  border-radius: none !important;
+}
 #hero h1 {
   margin: 2vh;
   padding: 3vh;
