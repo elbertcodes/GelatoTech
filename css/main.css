@@ -66,15 +66,30 @@
   background: #0a7c0a;
   color: white;
 }
+header{
+  position:fixed;
+  z-index: 9999;
+  top:0;
+  left:0;
+  width:100%;
+}
 #hero {
   background: url("https://i.postimg.cc/c4TCk23P/whats-icracked.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 100%;
-  padding: 5rem 0;
+  padding: 10rem 0;
 }
 .notification {
   border-radius: none !important;
+}
+.alert{
+  background:#e8e8e8;
+  text-align:center;
+  display:grid;
+  grid-template-columns: 100fr 2fr; 
+  padding: 20px 10px;
+  color:black;
 }
 #hero h1 {
   margin: 2vh;
