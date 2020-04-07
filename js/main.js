@@ -649,6 +649,26 @@ else {
     warrantyText.innerText = deviceDictionary["iphones"]["iphone6s"]["water"]["warranty"]
     repairtimeText.innerText = deviceDictionary["iphones"]["iphone6s"]["water"]["duration"]
   }
+  else if (chooseIssue == "screen" && chooseDeviceModel == "6plus") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone6plus"]["screen"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone6plus"]["screen"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone6plus"]["screen"]["duration"]
+  }
+  else if (chooseIssue == "battery" && chooseDeviceModel == "6plus") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone6plus"]["battery"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone6plus"]["battery"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone6plus"]["battery"]["duration"]
+  }
+  else if (chooseIssue == "charging" && chooseDeviceModel == "6plus") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone6plus"]["charging"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone6plus"]["charging"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone6plus"]["charging"]["duration"]
+  }
+  else if (chooseIssue == "water" && chooseDeviceModel == "6plus") {
+    priceTitle.innerText = deviceDictionary["iphones"]["iphone6plus"]["water"]["price"]
+    warrantyText.innerText = deviceDictionary["iphones"]["iphone6plus"]["water"]["warranty"]
+    repairtimeText.innerText = deviceDictionary["iphones"]["iphone6plus"]["water"]["duration"]
+  }
   else if (chooseIssue == "screen" && chooseDeviceModel == "6") {
     priceTitle.innerText = deviceDictionary["iphones"]["iphone6"]["screen"]["price"]
     warrantyText.innerText = deviceDictionary["iphones"]["iphone6"]["screen"]["warranty"]
