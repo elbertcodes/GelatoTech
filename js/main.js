@@ -312,7 +312,7 @@ function myFunction() {
       },
       iphonexsmax:{
         screen: {
-          price: "Up-front Price $330",
+          price: "Up-front Price $280",
           warranty: "Lifetime Warranty",
           duration: "Screen Repair takes 15 minutes",
         },
@@ -334,7 +334,7 @@ function myFunction() {
       },
       iphone11:{
         screen: {
-          price: "Up-front Price $200",
+          price: "Up-front Price $180",
           warranty: "Lifetime Warranty",
           duration: "Screen Repair takes 15 minutes",
         },
