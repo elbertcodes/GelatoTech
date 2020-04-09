@@ -376,7 +376,7 @@ function myFunction() {
           duration: "Repair takes 2-3 business days",
         },
       },
-      iphone11promax:{
+      iphone11pro:{
         screen: {
           price: "Up-front Price $330",
           warranty: "Lifetime Warranty",
@@ -442,6 +442,48 @@ else if (chooseDeviceModel == "xsmax") {
 }
 else {
   selectColor.style.display = "block"
+}
+if (chooseIssue == "battery" && chooseDeviceModel == "11pro") {
+  priceTitle.innerText = deviceDictionary["iphones"]["iphone11pro"]["battery"]["price"]
+  warrantyText.innerText = deviceDictionary["iphones"]["iphone11pro"]["battery"]["warranty"]
+  repairtimeText.innerText = deviceDictionary["iphones"]["iphonepro"]["battery"]["duration"]
+}
+else if (chooseIssue == "charging" && chooseDeviceModel == "11pro") {
+  priceTitle.innerText = deviceDictionary["iphones"]["iphone11pro"]["charging"]["price"]
+  warrantyText.innerText = deviceDictionary["iphones"]["iphone11pro"]["charging"]["warranty"]
+  repairtimeText.innerText = deviceDictionary["iphones"]["iphone11pro"]["charging"]["duration"]
+}
+else if (chooseIssue == "water" && chooseDeviceModel == "11pro") {
+  priceTitle.innerText = deviceDictionary["iphones"]["iphone11pro"]["water"]["price"]
+  warrantyText.innerText = deviceDictionary["iphones"]["iphone11pro"]["water"]["warranty"]
+  repairtimeText.innerText = deviceDictionary["iphones"]["iphone11pro"]["water"]["duration"]
+}
+else if (chooseIssue == "screen" && chooseDeviceModel == "11pro") {
+  priceTitle.innerText = deviceDictionary["iphones"]["iphone11pro"]["screen"]["price"]
+  warrantyText.innerText = deviceDictionary["iphones"]["iphone11pro"]["screen"]["warranty"]
+  repairtimeText.innerText = deviceDictionary["iphones"]["iphone11pro"]["screen"]["duration"]
+
+}
+if (chooseIssue == "battery" && chooseDeviceModel == "11") {
+  priceTitle.innerText = deviceDictionary["iphones"]["iphone11"]["battery"]["price"]
+  warrantyText.innerText = deviceDictionary["iphones"]["iphone11"]["battery"]["warranty"]
+  repairtimeText.innerText = deviceDictionary["iphones"]["iphone11"]["battery"]["duration"]
+}
+else if (chooseIssue == "charging" && chooseDeviceModel == "11") {
+  priceTitle.innerText = deviceDictionary["iphones"]["iphone11"]["charging"]["price"]
+  warrantyText.innerText = deviceDictionary["iphones"]["iphone11"]["charging"]["warranty"]
+  repairtimeText.innerText = deviceDictionary["iphones"]["iphone11"]["charging"]["duration"]
+}
+else if (chooseIssue == "water" && chooseDeviceModel == "11") {
+  priceTitle.innerText = deviceDictionary["iphones"]["iphone11"]["water"]["price"]
+  warrantyText.innerText = deviceDictionary["iphones"]["iphone11"]["water"]["warranty"]
+  repairtimeText.innerText = deviceDictionary["iphones"]["iphone11"]["water"]["duration"]
+}
+else if (chooseIssue == "screen" && chooseDeviceModel == "11") {
+  priceTitle.innerText = deviceDictionary["iphones"]["iphone11"]["screen"]["price"]
+  warrantyText.innerText = deviceDictionary["iphones"]["iphone11"]["screen"]["warranty"]
+  repairtimeText.innerText = deviceDictionary["iphones"]["iphone11"]["screen"]["duration"]
+
 }
 
   if (chooseIssue == "battery" && chooseDeviceModel == "x") {
