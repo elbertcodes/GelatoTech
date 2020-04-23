@@ -1044,7 +1044,7 @@ else if (chooseIssue == "screen" && chooseDeviceModel == "11") {
             warranty: "90 day warranty",
             duration: "Repair takes 2-3 business days",
           }, //ipad pro
-          ipadpro1:{
+          ipadpro9:{
             screen: {
               price: "Upfront Price $300",
               warranty: "Lifetime Warranty",
@@ -1462,16 +1462,16 @@ else if (chooseIssue == "screen" && chooseDeviceModel == "11") {
     priceTitle.innerText = ipadprices["ipads"]["ipadair3"]["water"]["price"]
     warrantyText.innerText = ipadprices["ipads"]["ipadair3"]["water"]["warranty"]
     repairtimeText.innerText = ipadprices["ipads"]["ipadair3"]["water"]["duration"]
+  } //ipadpro1
+  else if (chooseIssue == "screen" && selectIpadDevice == "ipadpro9") {
+    priceTitle.innerText = ipadprices.ipads.ipadpro9.screen.price
+    warrantyText.innerText = ipadprices["ipads"]["ipadpro9"]["screen"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadpro9"]["screen"]["duration"]
   }
-  else if (chooseIssue == "screen" && selectIpadDevice == "ipadpro1") {
-    priceTitle.innerText = ipadprices["ipads"]["ipadpro1"]["screen"]["price"]
-    warrantyText.innerText = ipadprices["ipads"]["ipadpro9.7"]["screen"]["warranty"]
-    repairtimeText.innerText = ipadprices["ipads"]["ipadpro9.7"]["screen"]["duration"]
-  }
-  else if (chooseIssue == "battery" && selectIpadDevice == "ipadpro1") {
-    priceTitle.innerText = ipadprices["ipads"]["ipadpro1"]["battery"]["price"]
-    warrantyText.innerText = ipadprices["ipads"]["ipadpro1"]["battery"]["warranty"]
-    repairtimeText.innerText = ipadprices["ipads"]["ipadpro1"]["battery"]["duration"]
+  else if (chooseIssue == "battery" && selectIpadDevice == "ipadpro9") {
+    priceTitle.innerText = ipadprices["ipads"]["ipadpro9"]["battery"]["price"]
+    warrantyText.innerText = ipadprices["ipads"]["ipadpro9"]["battery"]["warranty"]
+    repairtimeText.innerText = ipadprices["ipads"]["ipadpro9"]["battery"]["duration"]
   }
   else if (chooseIssue == "charging" && selectIpadDevice == "ipadpro1") {
     priceTitle.innerText = ipadprices["ipads"]["ipadpro1"]["charging"]["price"]
