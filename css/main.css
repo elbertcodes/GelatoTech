@@ -1,3 +1,8 @@
+@import 'mainhero.css';
+@import 'nav.css';
+@import 'social.css';
+@import 'booking.css';
+
 :root {
   --action-color: #21bd21;
 }
@@ -24,48 +29,6 @@
   grid-template-columns: auto auto auto auto auto auto;
 }
 
-/* social icons */
-#twitter {
-  color:#1da1f2;
-  font-size: 2rem;
-}
-#twitter:hover{color:#87caf3}
-
-#yelp {
-  color:red;
-  font-size: 2rem;
-}
-#yelp:hover{color:rgba(255, 0, 0, 0.514);}
-#google {
-  color:#4285F4;
-  font-size: 2rem;
-}
-#google:hover{color:rgb(122, 153, 194);}
-#instagram{
-  color:#3f729b;
-  font-size: 2rem;
-}
-#instagram:hover{color:rgb(122, 153, 194);}
-#linkedin{
-  color:#0e76a8;
-  font-size: 2rem;
-}
-
-#linkedin:hover{color: #798ea0;}
-#facebook{
-  color:#3b5998;
-  font-size: 2rem;
-}
-#facebook:hover{color:#798ea0;}
-.btn-action {
-  
-  background: var(--action-color);
-  color: white;
-}
-.btn-action:hover {
-  background: #0a7c0a;
-  color: white;
-}
 header{
   position:fixed;
   z-index: 9999;
@@ -73,13 +36,7 @@ header{
   left:0;
   width:100%;
 }
-#hero {
-  background: url("https://i.postimg.cc/c4TCk23P/whats-icracked.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 100%;
-  padding: 10rem 0;
-}
+
 .notification {
   border-radius: none !important;
 }
@@ -91,15 +48,7 @@ header{
   padding: 20px 10px;
   color:black;
 }
-#hero h1 {
-  margin: 2vh;
-  padding: 3vh;
-  color: rgb(255, 255, 255);
 
-}
-#hero h2 {
-  color: rgb(255, 255, 255);
-}
 
 #services {
   background: rgb(244, 244, 244);
@@ -128,61 +77,16 @@ header{
 #why-us ul {
   list-style-type: circle;
 }
-#total-price-text {
-  color: #32b611;
-  display: inline-block;
-  margin: 0;
-  font-weight: 700;
-}
-#our-price-text {
-  color: #000000;
-  font-weight: 700;
-}
-#our-warranty-text {
-  color: #000000;
-  font-size: 1rem;
-}
-#our-repairtime-text {
-  color: #000000;
-  font-size: 1rem;
-}
-.why-container {
-  background: rgb(244, 244, 244);
-  padding: 3rem;
-  border-radius: 5px;
-}
-.center {
-  margin-left: auto;
-  margin-right: auto;
-}
-.form-container {
-  background: rgb(228, 228, 228);
-  padding: 3rem;
-  border-radius: 5px;
-}
-.work-section {
-  background: #000000;
-  color: white;
-  padding-top: 2rem;
-  padding-bottom: 1.5rem;
-}
-.work-section a {
-  color: white;
-}
-.icon-item {
-  font-size: 2rem;
-}
-.icon-item:hover {
-  color: #b3b1b1;
-  transition: 0.5s ease;
-}
-#companies {
-  font-size: 3rem;
-}
+
 
 /* media queries */
 /* [iphone6](phones, 600px and down) */
 @media only screen and (max-width: 500px) {
+  #hero .title {
+    font-size: 1.8rem;
+    margin-top: 3rem;
+  }
+  
   #get-started {
     background-image: url("https://i.postimg.cc/43FHhc48/Bitmap.jpg");
     background-size: cover;
@@ -208,16 +112,7 @@ header{
   #repair .subtitle {
     font-size: 1rem;
   }
-  #hero {
-    padding: 4rem 0;
-  }
-  #hero .title {
-    font-size: 1.8rem;
-    margin-top: 3rem;
-  }
-  #hero .subtitle {
-    font-size: 1.3rem;
-  }
+  
   #works h2 {
     font-size: 2rem;
   }
@@ -236,45 +131,7 @@ header{
     font-size: 1.8rem;
   }
 
-.navbar {
-  padding: 8px !important;
-}
-#nav-menu {
-  margin-left: 21vw;
-  cursor: pointer;
-}
-/* DROPDOWNS */
-#iphones, #ipads{display: none;}
-#nav-items a {
-  margin: 0.5rem;
-}
-nav ul li {
-  position: relative;
-}
 
-nav ul li ul {
-  display: none;
-  position: absolute;
-  background-color: white;
-  padding: 10px;
-  border-radius: 0px 0px 4px 4px;
-
-}
-nav ul li:hover ul {
-  display: block;
-  
-}
-nav ul li ul li {
-  width: 450px;
-  border-radius: 4px;
-}
-
-nav ul li ul li a {
-  padding: 12px 14px;
-}
-nav ul li ul li a:hover {
-  background-color: #f3f3f3;
-}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
