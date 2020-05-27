@@ -84,7 +84,7 @@ header{
 @media only screen and (max-width: 500px) {
   #hero .title {
     font-size: 1.8rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
   
   #get-started {

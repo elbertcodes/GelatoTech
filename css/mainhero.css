@@ -1,5 +1,5 @@
 #hero {
-    padding: 4rem 0;
+    padding: 1rem 0;
   }
   #hero .title {
     font-size: 3rem;
@@ -13,7 +13,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100%;
-    padding: 10rem 0;
+    padding: 3rem 0;
   }
   #hero h1 {
     margin: 2vh;
