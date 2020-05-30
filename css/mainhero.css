@@ -4,9 +4,11 @@
   #hero .title {
     font-size: 3rem;
     margin-top: 3rem;
+    font-weight: 900;
   }
   #hero .subtitle {
     font-size: 1.3rem;
+    font-weight: 900;
   }
   #hero {
     background: url("https://i.postimg.cc/c4TCk23P/whats-icracked.jpg");
