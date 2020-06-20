@@ -145,6 +145,7 @@
     }
   }
    </script>
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 
@@ -318,14 +319,15 @@
   <!-- how it works -->
   <section id="works" class="section">
     <div class="container">
-      <h1 class="title is-1">Here's How it Works</h1>
+      <h1 class="title is-1">How it Works</h1>
       <div class="columns">
         <div class="column">
           <figure class="image">
             <img src="https://i.postimg.cc/GhmV9yST/undraw-calendar-dutt.png" alt="Book your iphone repair"
               style="width: 40%; margin-left:auto; margin-right:auto;">
-            <h2 class="title is-3center" style="text-align:center;">Book Your Repair</h2>
-            <p class="subtitle is-5" style="margin:auto; text-align:center;"> Once you book your appointment, we will cofirm your preffered Time and Location for us to repair your device.
+            <h2 data-aos="zoom-out" class="title is-3center" style="text-align:center;">Book Your Repair</h2>
+            <p data-aos="zoom-out" class="subtitle is-5" style="margin:auto; text-align:center;"> Once you schedule your appointment, we will cofirm your preffered
+              time and location for us to repair your device.
             </p>
           </figure>
         </div>
@@ -333,8 +335,8 @@
           <figure class="image">
             <img src="https://i.postimg.cc/2ycHn0Xb/undraw-order-a-car-3tww.png" alt="We repair your phone screen on-spot"
               style="width: 40%; margin-left:auto; margin-right:auto;">
-            <h2 class="title is-3 center" style="text-align:center;">We Come To You</h2>
-            <p class="subtitle is-5" style="margin:auto; text-align:center;">We Repair your iPhone On-Spot, usually inside our car or your preffered location.
+            <h2 data-aos="zoom-out" class="title is-3 center" style="text-align:center;">We Come To You</h2>
+            <p data-aos="zoom-out" class="subtitle is-5" style="margin:auto; text-align:center;">We Repair your iPhone On-Spot, usually inside our car or your preffered location.
             </p>
           </figure>
         </div>
@@ -342,8 +344,8 @@
           <figure class="image">
             <img src="https://i.postimg.cc/jj44z8Dx/undraw-Credit-card-3ed6.png" alt="iPhone screen repair on-spot"
               style="width: 40%; margin-right:auto; margin-left:auto;">
-            <h2 class="title is-3 center" style="text-align:center;">Pay After The Repair</h2>
-            <p class="subtitle is-5" style="margin:auto; text-align:center;">Once the repair is done , we make sure to test everyhting before leaving. After the test you can pay with cash, venmo, or any credit card. </p>
+            <h2 data-aos="zoom-out" class="title is-3 center" style="text-align:center;">Pay After The Repair</h2>
+            <p data-aos="zoom-out" class="subtitle is-5" style="margin:auto; text-align:center;">Once the repair is done , we make sure to test everyhting before leaving. After the test you can pay with cash, venmo, or any credit card. </p>
           </figure>
         </div>
       </div>
@@ -384,8 +386,8 @@
   </section>
   <section class="section" id="repair">
     <div class=" form-container container has-text-centered">
-      <h1 class="title is-1">Schedule Repair</h1>
-      <h2 class="subtitle">Pick your device model and problem.</h2>
+      <h1 data-aos="fade-up" class="title is-1">Schedule Repair</h1>
+      <h2 data-aos="fade-up" class="subtitle">Pick your device model and problem.</h2>
       <figure>
         <img src="https://i.postimg.cc/gcq05yKT/iphonex.png" style="max-width:80px;" alt="iPhone Screen Repair">
       </figure>
@@ -568,13 +570,18 @@
   
 
   <!-- get started banner -->
+
+    
   <div class="section" id="get-started" alt="iphone screen repair">
     <div class="container">
-      <h3 style= "color:white;" class="title is-1">Ready to get started?</h3>
-      <h3 style= "color:white;" class="subtitle is-4">iPhone Screeen Repair only takes 15 minutes!</h3><br>
+      <h3 data-aos="fade-right" 
+        style= "color:white;" class="title is-1">Ready to get started?</h3>
+      <h3 data-aos="fade-right" 
+      style= "color:white;" class="subtitle is-4">iPhone Screeen Repair only takes 15 minutes!</h3><br>
       <a class="button is-info is-large" href="#repair">Book iPhone Repair<i style='margin-left: 1vh;'class="fas fa-mobile"></i></a>
     </div>
   </div>
+
 
   <!-- footer -->
   <footer style="padding:25px;">
@@ -702,6 +709,12 @@
   attribution=install_email
   page_id="1848657532048801">
 </div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 
 </html>
