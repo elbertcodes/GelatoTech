@@ -572,7 +572,7 @@ function myFunction() {
       warrantyText.innerText = deviceDictionary["iphones"]["iphone7plus"]["battery"]["warranty"]
       repairtimeText.innerText = deviceDictionary["iphones"]["iphone7plus"]["battery"]["duration"]
   } else if (chooseIssue == "charging" && chooseDeviceModel == "7plus") {
-      priceTitle.innerText = deviceDictionary["iphones"]["iphone7lus"]["charging"]["price"]
+      priceTitle.innerText = deviceDictionary["iphones"]["iphone7plus"]["charging"]["price"]
       warrantyText.innerText = deviceDictionary["iphones"]["iphone7plus"]["charging"]["warranty"]
       repairtimeText.innerText = deviceDictionary["iphones"]["iphone7plus"]["charging"]["duration"]
   } else if (chooseIssue == "water" && chooseDeviceModel == "7plus") {
@@ -975,17 +975,17 @@ function myFunction() {
           },
           ipadpro9: {
               screen: {
-                  price: "Upfront Price $300",
+                  price: "Upfront Price $250",
                   warranty: "Lifetime Warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
-                  price: "Upfront Price $250",
+                  price: "Upfront Price $150",
                   warranty: "90 day warranty",
                   duration: "Battery Replacement takes 15 minutes",
               },
               charging: {
-                  price: "Upfront Price $250",
+                  price: "Upfront Price $150",
                   warranty: "90 day warranty",
                   duration: "Charging-Port Replacement takes 30 minutes",
               },
@@ -1041,17 +1041,17 @@ function myFunction() {
           },
           ipadpro10: {
               screen: {
-                  price: "Upfront Price $399",
+                  price: "Upfront Price $280",
                   warranty: "Lifetime Warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
-                  price: "Upfront Price $200",
+                  price: "Upfront Price $150",
                   warranty: "90 day warranty",
                   duration: "Battery Replacement takes 15 minutes",
               },
               charging: {
-                  price: "Upfront Price $200",
+                  price: "Upfront Price $150",
                   warranty: "90 day warranty",
                   duration: "Charging-Port Replacement takes 30 minutes",
               },
